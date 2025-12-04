@@ -1,0 +1,2801 @@
+Trivially needed symbols: spi_enter_quadmode/159 spi_exit_quadmode/158 spi_transmit/157 spi_init/156 _dma_init/155 FastSPI_IRQHandler/154 g_master_done/151 g_rx_done/150 g_tx_done/149
+
+
+Initial Symbol table:
+
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_enter_quadmode/159 spi_exit_quadmode/158 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_transmit/157 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 spi_init/156 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @01c61e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @064bd5e8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @064bd498
+  References: g_tx_done/149 (write) g_rx_done/150 (write) g_master_done/151 (write) g_dummy_len/146 (write) g_dummy_len/146 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_done/149 (write) g_tx_channel/144 (read) g_dummy_byte/147 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_master_done/151 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_rx_channel/145 (read) g_rx_done/150 (write) g_tx_done/149 (read) g_master_done/151 (read) g_rx_done/150 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_GetWidth/167 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @064bd348
+  References: fastspi_spi_pins/143 (addr) fastspi_ss_pin/142 (addr) FastSPI_IRQHandler/154 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: _dma_init/155 __NVIC_SetPriority/118 MXC_NVIC_SetVector/162 __NVIC_EnableIRQ/111 MXC_SPI_SetFrequency/166 MXC_GPIO_Config/165 MXC_GPIO_Config/165 MXC_SYS_Reset_Periph/164 MXC_SYS_ClockEnable/163 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @064bd1f8
+  References: g_dma_initialized/148 (read) g_tx_channel/144 (write) g_rx_channel/145 (write) g_tx_channel/144 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) DMA_TX_IRQHandler/152 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) DMA_RX_IRQHandler/153 (addr) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_dma_initialized/148 (write) 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 
+  Calls: __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 MXC_DMA_AcquireChannel/161 MXC_DMA_AcquireChannel/161 MXC_DMA_Init/160 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  Aux: @064bd0a8
+  References: g_master_done/151 (write) 
+  Referring: spi_init/156 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  Aux: @064b1498
+  References: g_rx_channel/145 (read) g_rx_done/150 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  Aux: @064a5e10
+  References: g_tx_channel/144 (read) g_tx_done/149 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  Aux: @064b1738
+  References: 
+  Referring: FastSPI_IRQHandler/154 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  Aux: @0646a438
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  Aux: @064a5f78
+  References: 
+  Referring: DMA_TX_IRQHandler/152 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063bebd0
+  References: 
+  Referring: _dma_init/155 (read) _dma_init/155 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064a5e58
+  References: 
+  Referring: spi_transmit/157 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_len/146 (g_dummy_len) @064a5e58
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064bd498
+  References: 
+  Referring: spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064a5dc8
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_RX_IRQHandler/153 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064a5ee8
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_TX_IRQHandler/152 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064bd348
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @0646aaf8
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section) @0646ff18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit) @0646fdc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter) @0646fc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state) @0646fb28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state) @0646a630
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar) @063e75e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @063e7498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @063e7348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @063e7000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @063df3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @063dfe70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @063dfd20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @063dfbd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @063dfa80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @063df930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @063df7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @063df690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @063d1e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @063d1d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @063d1bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @063d1a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @063d1930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @063d17e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @064bd1f8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @063d1540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @063d13f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @063d12a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @063d1150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @063d1000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @063bee70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @063bebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063d1690
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @063bea80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @063be930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @0638bf18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @0638bdc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @0638bc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @0638bb28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @0638b9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @0638b888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @0638b738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @0638b5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @0638b498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @0638b348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @0638b1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @0638b0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @06383f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @06383dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @06383c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @06383b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @063839d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @06383888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @06383738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @063835e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @06383498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @06383348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @063830a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @0637df18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @0637ddc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @0637dc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @0637db28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @0637d9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @0637d888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @0637d738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @0637d5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @0637d498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @0637d348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @0637d1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @0637d0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @06377f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @06377dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @06377c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @06377b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @063779d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @06377888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @06377738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @063775e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @06377498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @06377348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @063771f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @063770a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @0636ef18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @0636edc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @0636ec78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @0636eb28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @0636e9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @0636e888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @0636e738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @0636e5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @0636e498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @0636e348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @0636e1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @0636e0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @06368f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @06368dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @06368c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @06368b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @063689d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @06368888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @06368738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @063685e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @06368498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @06368348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @063681f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @063680a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @06362f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @06362dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @06362c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @06362b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @063629d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @06362888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @06362738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @063625e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @06362498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @06362348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @063621f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @063620a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @0635af18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @0635adc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @0635ac78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @0635ab28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @0635a9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @0635a888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @0635a5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @0635a498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @0635a348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @0635a1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @0635a0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @06356f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @06356dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @06356c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @06356b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @06356930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @063567e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @06356690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @06356540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @063563f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @063562a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @06356150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @06356000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @062cf498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @062cf348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @062cf150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_enter_quadmode/159 spi_exit_quadmode/158 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_transmit/157 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 spi_init/156 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_tx_done/149 (write) g_rx_done/150 (write) g_master_done/151 (write) g_dummy_len/146 (write) g_dummy_len/146 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_done/149 (write) g_tx_channel/144 (read) g_dummy_byte/147 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_master_done/151 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_rx_channel/145 (read) g_rx_done/150 (write) g_tx_done/149 (read) g_master_done/151 (read) g_rx_done/150 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_GetWidth/167 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: fastspi_spi_pins/143 (addr) fastspi_ss_pin/142 (addr) FastSPI_IRQHandler/154 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: _dma_init/155 __NVIC_SetPriority/118 MXC_NVIC_SetVector/162 __NVIC_EnableIRQ/111 MXC_SPI_SetFrequency/166 MXC_GPIO_Config/165 MXC_GPIO_Config/165 MXC_SYS_Reset_Periph/164 MXC_SYS_ClockEnable/163 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_dma_initialized/148 (read) g_tx_channel/144 (write) g_rx_channel/145 (write) g_tx_channel/144 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) DMA_TX_IRQHandler/152 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) DMA_RX_IRQHandler/153 (addr) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_dma_initialized/148 (write) 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 
+  Calls: __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 MXC_DMA_AcquireChannel/161 MXC_DMA_AcquireChannel/161 MXC_DMA_Init/160 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: g_master_done/151 (write) 
+  Referring: spi_init/156 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_rx_channel/145 (read) g_rx_done/150 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_tx_channel/144 (read) g_tx_done/149 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: FastSPI_IRQHandler/154 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_TX_IRQHandler/152 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (read) _dma_init/155 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_len/146 (g_dummy_len) @064a5e58
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_RX_IRQHandler/153 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_TX_IRQHandler/152 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @063bebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+
+
+Initial Symbol table:
+
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_enter_quadmode/159 spi_exit_quadmode/158 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_transmit/157 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 spi_init/156 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_tx_done/149 (write) g_rx_done/150 (write) g_master_done/151 (write) g_dummy_len/146 (write) g_dummy_len/146 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_done/149 (write) g_tx_channel/144 (read) g_dummy_byte/147 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_master_done/151 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_rx_channel/145 (read) g_rx_done/150 (write) g_tx_done/149 (read) g_master_done/151 (read) g_rx_done/150 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_GetWidth/167 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: fastspi_spi_pins/143 (addr) fastspi_ss_pin/142 (addr) FastSPI_IRQHandler/154 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: _dma_init/155 __NVIC_SetPriority/118 MXC_NVIC_SetVector/162 __NVIC_EnableIRQ/111 MXC_SPI_SetFrequency/166 MXC_GPIO_Config/165 MXC_GPIO_Config/165 MXC_SYS_Reset_Periph/164 MXC_SYS_ClockEnable/163 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_dma_initialized/148 (read) g_tx_channel/144 (write) g_rx_channel/145 (write) g_tx_channel/144 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) DMA_TX_IRQHandler/152 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) DMA_RX_IRQHandler/153 (addr) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_dma_initialized/148 (write) 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 
+  Calls: __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 MXC_DMA_AcquireChannel/161 MXC_DMA_AcquireChannel/161 MXC_DMA_Init/160 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: g_master_done/151 (write) 
+  Referring: spi_init/156 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_rx_channel/145 (read) g_rx_done/150 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_tx_channel/144 (read) g_tx_done/149 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: FastSPI_IRQHandler/154 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_TX_IRQHandler/152 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (read) _dma_init/155 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_len/146 (g_dummy_len) @064a5e58
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_RX_IRQHandler/153 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_TX_IRQHandler/152 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @063bebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_enter_quadmode/159 spi_exit_quadmode/158 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_transmit/157 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 spi_init/156 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 _dma_init/155 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: _dma_init/155 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_tx_done/149 (write) g_rx_done/150 (write) g_master_done/151 (write) g_dummy_len/146 (write) g_dummy_len/146 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_done/149 (write) g_tx_channel/144 (read) g_dummy_byte/147 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_master_done/151 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_rx_channel/145 (read) g_rx_done/150 (write) g_tx_done/149 (read) g_master_done/151 (read) g_rx_done/150 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SPI_GetWidth/167 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: fastspi_spi_pins/143 (addr) fastspi_ss_pin/142 (addr) FastSPI_IRQHandler/154 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: _dma_init/155 __NVIC_SetPriority/118 MXC_NVIC_SetVector/162 __NVIC_EnableIRQ/111 MXC_SPI_SetFrequency/166 MXC_GPIO_Config/165 MXC_GPIO_Config/165 MXC_SYS_Reset_Periph/164 MXC_SYS_ClockEnable/163 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_dma_initialized/148 (read) g_tx_channel/144 (write) g_rx_channel/145 (write) g_tx_channel/144 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) DMA_TX_IRQHandler/152 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) DMA_RX_IRQHandler/153 (addr) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_rx_channel/145 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_tx_channel/144 (read) g_dma_initialized/148 (write) 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 
+  Calls: __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 __NVIC_SetPriority/118 __NVIC_EnableIRQ/111 MXC_NVIC_SetVector/162 MXC_DMA_AcquireChannel/161 MXC_DMA_AcquireChannel/161 MXC_DMA_Init/160 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Address is taken.
+  References: g_master_done/151 (write) 
+  Referring: spi_init/156 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_rx_channel/145 (read) g_rx_done/150 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Address is taken.
+  References: g_tx_channel/144 (read) g_tx_done/149 (write) 
+  Referring: _dma_init/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: FastSPI_IRQHandler/154 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition
+  References: 
+  Referring: DMA_TX_IRQHandler/152 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (read) _dma_init/155 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_dummy_len/146 (g_dummy_len) @064a5e58
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_RX_IRQHandler/153 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) DMA_TX_IRQHandler/152 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: not-ready
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @063bebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: spi_init/156 _dma_init/155 _dma_init/155 
+  Calls: 
+updating call of spi_init/156 -> __builtin_unreachable/175: __NVIC_SetPriority.part.0 (56, 0);
+  updated to:__builtin_unreachable ();
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+__NVIC_EnableIRQ.part.0/181 (__NVIC_EnableIRQ.part.0) @0636e738
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  next sharing asm name: 180
+  References: 
+  Referring: 
+  Function __NVIC_EnableIRQ.part.0/181 is inline copy in _dma_init/155
+  Clone of __NVIC_EnableIRQ.part.0/169
+  Availability: local
+  Function flags: count:343944806 (estimated locally) body local split_part
+  Called by: _dma_init/155 (inlined) (343944806 (estimated locally),0.32 per call) 
+  Calls: 
+__NVIC_EnableIRQ.part.0/180 (__NVIC_EnableIRQ.part.0) @0636e5e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  next sharing asm name: 169
+  previous sharing asm name: 181
+  References: 
+  Referring: 
+  Function __NVIC_EnableIRQ.part.0/180 is inline copy in spi_init/156
+  Clone of __NVIC_EnableIRQ.part.0/169
+  Availability: local
+  Function flags: count:125398821 (estimated locally) body local split_part
+  Called by: spi_init/156 (inlined) (125398821 (estimated locally),0.12 per call) 
+  Calls: 
+__NVIC_SetPriority.part.0.constprop.0/179 (__NVIC_SetPriority.part.0.constprop) @0636eb28
+  Type: function definition analyzed
+  Visibility: artificial
+  next sharing asm name: 177
+  References: 
+  Referring: 
+  Function __NVIC_SetPriority.part.0.constprop/179 is inline copy in _dma_init/155
+  Clone of __NVIC_SetPriority.part.0.constprop.0/177
+  Availability: local
+  Function flags: count:141017369 (estimated locally) local split_part nonfreeing_fn
+  Called by: __NVIC_SetPriority.constprop.0/178 (inlined) (141017369 (estimated locally),0.13 per call) 
+  Calls: 
+__NVIC_SetPriority.constprop.0/178 (__NVIC_SetPriority.constprop) @06368dc8
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 176
+  References: 
+  Referring: 
+  Function __NVIC_SetPriority.constprop/178 is inline copy in _dma_init/155
+  Clone of __NVIC_SetPriority.constprop.0/176
+  Availability: local
+  Function flags: count:343944806 (estimated locally) local nonfreeing_fn
+  Called by: _dma_init/155 (inlined) (343944806 (estimated locally),0.32 per call) 
+  Calls: __NVIC_SetPriority.part.0.constprop.0/179 (inlined) (141017369 (estimated locally),0.13 per call) 
+__NVIC_SetPriority.part.0.constprop.0/177 (__NVIC_SetPriority.part.0.constprop) @0636e9d8
+  Type: function definition analyzed
+  Visibility: artificial
+  previous sharing asm name: 179
+  References: 
+  Referring: 
+  Function __NVIC_SetPriority.part.0.constprop/177 is inline copy in _dma_init/155
+  Clone of __NVIC_SetPriority.part.0/170
+  Availability: local
+  Function flags: count:141017369 (estimated locally) local split_part nonfreeing_fn
+  Called by: __NVIC_SetPriority.constprop.0/176 (inlined) (141017369 (estimated locally),0.13 per call) 
+  Calls: 
+__NVIC_SetPriority.constprop.0/176 (__NVIC_SetPriority.constprop) @0636e348
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 178
+  References: 
+  Referring: 
+  Function __NVIC_SetPriority.constprop/176 is inline copy in _dma_init/155
+  Clone of __NVIC_SetPriority/118
+  Availability: local
+  Function flags: count:343944806 (estimated locally) local nonfreeing_fn
+  Called by: _dma_init/155 (inlined) (343944806 (estimated locally),0.32 per call) 
+  Calls: __NVIC_SetPriority.part.0.constprop.0/177 (inlined) (141017369 (estimated locally),0.13 per call) 
+FastSPI_IRQHandler.part.0/171 (FastSPI_IRQHandler.part.0) @06362dc8
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Function FastSPI_IRQHandler.part.0/171 is inline copy in FastSPI_IRQHandler/154
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part nonfreeing_fn
+  Called by: FastSPI_IRQHandler/154 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+__NVIC_SetPriority.part.0/170 (__NVIC_SetPriority.part.0) @06362888
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body split_part
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ.part.0/169 (__NVIC_EnableIRQ.part.0) @06362738
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  previous sharing asm name: 180
+  References: 
+  Referring: 
+  Function __NVIC_EnableIRQ.part.0/169 is inline copy in _dma_init/155
+  Availability: local
+  Function flags: count:343944806 (estimated locally) body local split_part
+  Called by: _dma_init/155 (inlined) (343944806 (estimated locally),0.32 per call) 
+  Calls: 
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_enter_quadmode/159 (1073741824 (estimated locally),1.00 per call) spi_exit_quadmode/158 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_transmit/157 (30805348 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_init/156 (256544234 (estimated locally),0.24 per call) 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_init/156 (524845000 (estimated locally),0.49 per call) spi_init/156 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_init/156 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_init/156 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: spi_init/156 (125398821 (estimated locally),0.12 per call) _dma_init/155 (343944806 (estimated locally),0.32 per call) _dma_init/155 (343944806 (estimated locally),0.32 per call) 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: _dma_init/155 (349021924 (estimated locally),0.33 per call) _dma_init/155 (349021924 (estimated locally),0.33 per call) 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: _dma_init/155 (524844999 (estimated locally),0.49 per call) 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 (1073741824 (estimated locally),1.00 per call) 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_SPI_SetWidth/168 (1073741824 (estimated locally),1.00 per call) 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_tx_done/149 (write) g_rx_done/150 (write) g_master_done/151 (write) g_dummy_len/146 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_tx_channel/144 (read) g_dummy_byte/147 (addr) g_rx_channel/145 (read) g_master_done/151 (write) g_tx_channel/144 (read) g_tx_done/149 (write) g_rx_channel/145 (read) g_rx_done/150 (write) g_tx_done/149 (read) g_master_done/151 (read) g_rx_done/150 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:30805348 (estimated locally) body
+  Called by: 
+  Calls: MXC_SPI_GetWidth/167 (30805348 (estimated locally),1.00 per call) 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: fastspi_spi_pins/143 (addr) fastspi_ss_pin/142 (addr) FastSPI_IRQHandler/154 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: _dma_init/155 (125398821 (estimated locally),0.12 per call) MXC_NVIC_SetVector/162 (125398821 (estimated locally),0.12 per call) __NVIC_EnableIRQ.part.0/180 (inlined) (125398821 (estimated locally),0.12 per call) MXC_SPI_SetFrequency/166 (256544234 (estimated locally),0.24 per call) MXC_GPIO_Config/165 (524845000 (estimated locally),0.49 per call) MXC_GPIO_Config/165 (1073741824 (estimated locally),1.00 per call) MXC_SYS_Reset_Periph/164 (1073741824 (estimated locally),1.00 per call) MXC_SYS_ClockEnable/163 (1073741824 (estimated locally),1.00 per call) 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_dma_initialized/148 (read) g_tx_channel/144 (write) g_rx_channel/145 (write) g_tx_channel/144 (read) DMA_TX_IRQHandler/152 (addr) g_tx_channel/144 (read) g_tx_channel/144 (read) g_rx_channel/145 (read) DMA_RX_IRQHandler/153 (addr) g_rx_channel/145 (read) g_tx_channel/144 (read) g_dma_initialized/148 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: spi_init/156 (125398821 (estimated locally),0.12 per call) 
+  Calls: __NVIC_SetPriority.constprop.0/176 (inlined) (343944806 (estimated locally),0.32 per call) __NVIC_EnableIRQ.part.0/181 (inlined) (343944806 (estimated locally),0.32 per call) MXC_NVIC_SetVector/162 (343944806 (estimated locally),0.32 per call) __NVIC_SetPriority.constprop.0/178 (inlined) (343944806 (estimated locally),0.32 per call) __NVIC_EnableIRQ.part.0/169 (inlined) (343944806 (estimated locally),0.32 per call) MXC_NVIC_SetVector/162 (343944806 (estimated locally),0.32 per call) MXC_DMA_AcquireChannel/161 (349021924 (estimated locally),0.33 per call) MXC_DMA_AcquireChannel/161 (349021924 (estimated locally),0.33 per call) MXC_DMA_Init/160 (524844999 (estimated locally),0.49 per call) 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  Address is taken.
+  References: g_master_done/151 (write) 
+  Referring: spi_init/156 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: FastSPI_IRQHandler.part.0/171 (inlined) (536870912 (estimated locally),0.50 per call) 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: g_rx_channel/145 (read) g_rx_done/150 (write) 
+  Referring: _dma_init/155 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: g_tx_channel/144 (read) g_tx_done/149 (write) 
+  Referring: _dma_init/155 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: FastSPI_IRQHandler/154 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: available
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: available
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: DMA_TX_IRQHandler/152 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (write) spi_transmit/157 (read) 
+  Availability: available
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: _dma_init/155 (read) _dma_init/155 (write) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: spi_transmit/157 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+g_dummy_len/146 (g_dummy_len) @064a5e58
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: spi_transmit/157 (write) 
+  Availability: available
+  Varpool flags: used-by-single-function write-only
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: DMA_RX_IRQHandler/153 (read) _dma_init/155 (write) _dma_init/155 (read) _dma_init/155 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: available
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: _dma_init/155 (read) DMA_TX_IRQHandler/152 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (read) _dma_init/155 (write) spi_transmit/157 (read) spi_transmit/157 (read) spi_transmit/157 (read) 
+  Availability: available
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: spi_init/156 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: 
+cloning __NVIC_SetPriority.part.0/170 to __NVIC_SetPriority.part.0.constprop/177
+    replace map: 1 -> 0
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+void __NVIC_SetPriority.part.0 (IRQn_Type IRQn, uint32_t priority)
+{
+  unsigned char _2;
+  <unnamed type> _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  unsigned char _7;
+
+  <bb 4> [local count: 1073741824]:
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _2 = (unsigned char) priority_1(D);
+  _4 = IRQn_3(D) & 15;
+  _5 = (long unsigned int) _4;
+  _6 = _5 + 4294967292;
+  _7 = _2 << 5;
+  MEM[(struct SCB_Type *)3758157056B].SHP[_6] ={v} _7;
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+void __NVIC_SetPriority.part.0.constprop (IRQn_Type IRQn)
+{
+  uint32_t priority;
+  unsigned char _1;
+  <unnamed type> _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned char _6;
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG priority => 0
+
+  <bb 2> [local count: 1073741824]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = 0;
+  _3 = IRQn_2(D) & 15;
+  _4 = (long unsigned int) _3;
+  _5 = _4 + 4294967292;
+  _6 = _1 << 5;
+  MEM[(struct SCB_Type *)3758157056B].SHP[_5] ={v} _6;
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+
+cloning __NVIC_SetPriority/118 to __NVIC_SetPriority.constprop/176
+    replace map: 1 -> 0
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+void __NVIC_SetPriority (IRQn_Type IRQn, uint32_t priority)
+{
+  unsigned char _1;
+  long unsigned int _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (IRQn_6(D) >= 0)
+    goto <bb 3>; [59.00%]
+  else
+    goto <bb 4>; [41.00%]
+
+  <bb 3> [local count: 633507681]:
+  # DEBUG BEGIN_STMT
+  _1 = (unsigned char) priority_7(D);
+  _2 = (long unsigned int) IRQn_6(D);
+  _3 = _1 << 5;
+  MEM[(struct NVIC_Type *)3758153984B].IP[_2] ={v} _3;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 440234144]:
+  __NVIC_SetPriority.part.0 (IRQn_6(D), priority_7(D));
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+void __NVIC_SetPriority.constprop (IRQn_Type IRQn)
+{
+  uint32_t priority;
+  unsigned char _2;
+  long unsigned int _3;
+  unsigned char _4;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG priority => 0
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (IRQn_1(D) >= 0)
+    goto <bb 3>; [59.00%]
+  else
+    goto <bb 4>; [41.00%]
+
+  <bb 3> [local count: 633507681]:
+  # DEBUG BEGIN_STMT
+  _2 = 0;
+  _3 = (long unsigned int) IRQn_1(D);
+  _4 = _2 << 5;
+  MEM[(struct NVIC_Type *)3758153984B].IP[_3] ={v} _4;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 440234144]:
+  __NVIC_SetPriority.part.0 (IRQn_1(D), 0);
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+updating call of _dma_init/155 -> __NVIC_SetPriority.constprop/176: __NVIC_SetPriority (iftmp.55_72, 0);
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+  updated to:__NVIC_SetPriority.constprop (iftmp.55_72);
+updating call of _dma_init/155 -> __NVIC_SetPriority.constprop/178: __NVIC_SetPriority (iftmp.31_60, 0);
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+  updated to:__NVIC_SetPriority.constprop (iftmp.31_60);
+updating call of _dma_init/155 -> __NVIC_SetPriority.part.0.constprop/179: __NVIC_SetPriority.part.0 (iftmp.31_60, 0);
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+  updated to:__NVIC_SetPriority.part.0.constprop (iftmp.31_60);
+updating call of _dma_init/155 -> __NVIC_SetPriority.part.0.constprop/177: __NVIC_SetPriority.part.0 (iftmp.55_72, 0);
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+  updated to:__NVIC_SetPriority.part.0.constprop (iftmp.55_72);
+Trivially needed variables: g_master_done/151 g_rx_done/150 g_tx_done/149 g_dma_initialized/148 g_dummy_byte/147 g_rx_channel/145 g_tx_channel/144 fastspi_spi_pins/143 fastspi_ss_pin/142
+Removing variables: g_dummy_len/146
+
+Final Symbol table:
+
+__NVIC_SetPriority.part.0/170 (__NVIC_SetPriority.part.0) @06362888
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) split_part
+  Called by: 
+  Calls: 
+MXC_SPI_SetWidth/168 (MXC_SPI_SetWidth) @064bdc78
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SPI_GetWidth/167 (MXC_SPI_GetWidth) @064bdbd0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SPI_SetFrequency/166 (MXC_SPI_SetFrequency) @064bdb28
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Config/165 (MXC_GPIO_Config) @064bda80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Reset_Periph/164 (MXC_SYS_Reset_Periph) @064bd9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_ClockEnable/163 (MXC_SYS_ClockEnable) @064bd930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_NVIC_SetVector/162 (MXC_NVIC_SetVector) @064bd888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_AcquireChannel/161 (MXC_DMA_AcquireChannel) @064bd7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_Init/160 (MXC_DMA_Init) @064bd738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+spi_enter_quadmode/159 (spi_enter_quadmode) @064bd5e8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.spi_enter_quadmode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+spi_exit_quadmode/158 (spi_exit_quadmode) @064bd498
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.spi_exit_quadmode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+spi_transmit/157 (spi_transmit) @064bd348
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.spi_transmit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:30805348 (estimated locally)
+  Called by: 
+  Calls: 
+spi_init/156 (spi_init) @064bd1f8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.spi_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+_dma_init/155 (_dma_init) @064bd0a8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text._dma_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+FastSPI_IRQHandler/154 (FastSPI_IRQHandler) @064b1738
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.FastSPI_IRQHandler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+DMA_RX_IRQHandler/153 (DMA_RX_IRQHandler) @064b15e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.DMA_RX_IRQHandler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+DMA_TX_IRQHandler/152 (DMA_TX_IRQHandler) @064b1498
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.DMA_TX_IRQHandler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+g_master_done/151 (g_master_done) @0646a438
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly asm_written section:.bss.g_master_done (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+g_rx_done/150 (g_rx_done) @064a5f78
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly asm_written section:.bss.g_rx_done (implicit_section)
+  Aux: @0646a438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+g_tx_done/149 (g_tx_done) @064a5f30
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition prevailing_def_ironly asm_written section:.bss.g_tx_done (implicit_section)
+  Aux: @064a5f78
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+g_dma_initialized/148 (g_dma_initialized) @064a5ee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.bss.g_dma_initialized (implicit_section)
+  Aux: @064a5f30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+g_dummy_byte/147 (g_dummy_byte) @064a5ea0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.data.g_dummy_byte (implicit_section)
+  Aux: @064a5ee8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function
+g_rx_channel/145 (g_rx_channel) @064a5e10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.bss.g_rx_channel (implicit_section)
+  Aux: @064a5ea0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+g_tx_channel/144 (g_tx_channel) @064a5dc8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.bss.g_tx_channel (implicit_section)
+  Aux: @064a5e10
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+fastspi_spi_pins/143 (fastspi_spi_pins) @0646aaf8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.fastspi_spi_pins (implicit_section)
+  Aux: @064a5dc8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0646aa68
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.fastspi_ss_pin (implicit_section)
+  Aux: @0646aaf8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @063d1690
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 

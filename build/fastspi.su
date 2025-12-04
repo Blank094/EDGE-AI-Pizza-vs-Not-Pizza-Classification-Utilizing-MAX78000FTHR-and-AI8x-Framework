@@ -1,0 +1,8 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:41:13:DMA_TX_IRQHandler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:57:13:DMA_RX_IRQHandler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:73:6:FastSPI_IRQHandler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:91:5:_dma_init	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:142:5:spi_init	16	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:196:5:spi_transmit	48	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:299:5:spi_exit_quadmode	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/fastspi.c:304:5:spi_enter_quadmode	0	static

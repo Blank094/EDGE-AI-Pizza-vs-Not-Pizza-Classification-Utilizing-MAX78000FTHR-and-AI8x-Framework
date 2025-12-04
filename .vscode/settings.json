@@ -1,0 +1,14 @@
+{
+  "C_Cpp.default.forcedInclude": [
+    "${workspaceFolder}/build/project_defines.h"
+  ],
+  "cfs.configureWorkspace": "Yes",
+  "cfs.project.target": "MAX78000",
+  "cfs.project.board": "FTHR_RevA",
+  "cfs.programFile": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
+  "cfs.project.firmwarePlatform": "MSDK",
+  "cfs.openocd.target": "target/max78000.cfg",
+  "cfs.openocd.interface": "interface/cmsis-dap.cfg",
+  "cfs.openocd.riscvTarget": "target/max78000_riscv.cfg",
+  "cfs.openocd.riscvInterface": "interface/ftdi/olimex-arm-usb-ocd-h.cfg"
+}

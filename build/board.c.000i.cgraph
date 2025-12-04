@@ -1,0 +1,2559 @@
+Trivially needed symbols: SD_Get_Connections/157 SD_Power/156 Microphone_Power/155 Camera_Power/154 NMI_Handler/153 Console_Shutdown/152 Console_Init/151 Board_Init/150 GPIO1_IRQHandler/149 GPIO0_IRQHandler/148 mxc_assert/147 num_leds/146 led_pin/145 num_pbs/144 pb_pin/143 ConsoleUart/142
+
+
+Initial Symbol table:
+
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Microphone_Power/155 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Camera_Power/154 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 Microphone_Power/155 Camera_Power/154 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Shutdown/152 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Init/151 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 Board_Init/150 Board_Init/150 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO1_IRQHandler/149 GPIO0_IRQHandler/148 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: mxc_assert/147 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @01c61e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0713d2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_sd_power/169 max20303_init/166 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0713d150
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_mic_power/168 max20303_init/166 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @0713d000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_camera_power/167 max20303_init/166 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124e70
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124d20
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_UART_Shutdown/165 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124bd0
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 
+  Calls: MXC_UART_Init/164 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_Delay/163 mxc_assert/147 LED_Init/162 mxc_assert/147 PB_Init/161 Console_Init/151 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  Aux: @07124930
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  Aux: @071247e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124690
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 Board_Init/150 
+  Calls: printf/158 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07124540
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07125090
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @07125048
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @070dbf30
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @070dbee8
+  References: 
+  Referring: Console_Init/151 (read) Console_Shutdown/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section) @07076738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit) @070765e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter) @07076498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state) @07076348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state) @07068b88
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar) @07007e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @07007d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @07007bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @07007888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @07007738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @070075e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @07007498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @07007348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @070071f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @070070a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @07000d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @07000f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @06ffd738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @06ffd5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @06ffd498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @06ffd348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @06ffd1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @06ffd0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @06feef18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @06feedc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @06feec78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @06feeb28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @06fee9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @06fee888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @06fee738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @06fee5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @06fee498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @06fee348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @06f97540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @06f973f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @06f972a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @06f97150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @06f97000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @06f8ee70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @06f8ed20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @06f8ebd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @06f8ea80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @06f8e930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @06f8e7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @06f8e690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @06f8e540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @06f8e3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @06f8e2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @06f8e150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @06f8e000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @06f83e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @06f83d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @06f83bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @06f83a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @06f83930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @06f83690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @06f83540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @06f833f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @06f832a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @06f83150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @06f83000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @06f7ee70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @06f7ed20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @06f7ebd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @06f7ea80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @06f7e930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @06f7e7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @06f7e690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @06f7e540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @06f7e3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @06f7e2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @06f7e150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @06f7e000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @06f79e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @06f79d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @06f79bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @06f79a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @06f79930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @06f797e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @06f79690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @06f79540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @06f793f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @06f792a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @06f79150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @06f79000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @06f70e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @06f70d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @06f70bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @06f70a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @06f70930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @06f707e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @06f70690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @06f70540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @06f703f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @06f702a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @06f70150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @06f70000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @06f6de70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @06f6dd20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @06f6dbd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @06f6da80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @06f6d930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @06f6d7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @06f6d690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @06f6d540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @06f6d3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @06f6d2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @06f6d150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @06f6d000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @06f65e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @06f65d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @06f65bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @06f65a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @06f65930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @06f657e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @06f65690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @06f65540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @06f653f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @06f652a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @06f65150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @06f65000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @06f2fe70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @06f2fbd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @06f2fa80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @06f2f930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @06f2f7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @06f2f690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @06f2f540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @06f2f3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @06f2f2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @06f2f150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @06f21a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @06f21930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @06f217e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @06f21690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @06f21540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @06f21e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @06f21d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @06f21bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @06ea4930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @06ea47e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @06ea45e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_EnableIRQ/111 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Microphone_Power/155 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Camera_Power/154 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 Microphone_Power/155 Camera_Power/154 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Shutdown/152 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Init/151 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 Board_Init/150 Board_Init/150 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO1_IRQHandler/149 GPIO0_IRQHandler/148 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: mxc_assert/147 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_sd_power/169 max20303_init/166 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_mic_power/168 max20303_init/166 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_camera_power/167 max20303_init/166 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_UART_Shutdown/165 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 
+  Calls: MXC_UART_Init/164 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_Delay/163 mxc_assert/147 LED_Init/162 mxc_assert/147 PB_Init/161 Console_Init/151 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 Board_Init/150 
+  Calls: printf/158 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: Console_Init/151 (read) Console_Shutdown/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Microphone_Power/155 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Camera_Power/154 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 Microphone_Power/155 Camera_Power/154 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Shutdown/152 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Init/151 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 Board_Init/150 Board_Init/150 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO1_IRQHandler/149 GPIO0_IRQHandler/148 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: mxc_assert/147 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_sd_power/169 max20303_init/166 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_mic_power/168 max20303_init/166 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_camera_power/167 max20303_init/166 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_UART_Shutdown/165 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 
+  Calls: MXC_UART_Init/164 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_Delay/163 mxc_assert/147 LED_Init/162 mxc_assert/147 PB_Init/161 Console_Init/151 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 Board_Init/150 
+  Calls: printf/158 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: Console_Init/151 (read) Console_Shutdown/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Microphone_Power/155 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Camera_Power/154 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SD_Power/156 Microphone_Power/155 Camera_Power/154 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Shutdown/152 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Console_Init/151 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Board_Init/150 Board_Init/150 Board_Init/150 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: GPIO1_IRQHandler/149 GPIO0_IRQHandler/148 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: mxc_assert/147 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_sd_power/169 max20303_init/166 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_mic_power/168 max20303_init/166 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: max20303_camera_power/167 max20303_init/166 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_UART_Shutdown/165 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 
+  Calls: MXC_UART_Init/164 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_Delay/163 mxc_assert/147 LED_Init/162 mxc_assert/147 PB_Init/161 Console_Init/151 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 MXC_SYS_ClockEnable/160 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Board_Init/150 Board_Init/150 
+  Calls: printf/158 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: Console_Init/151 (read) Console_Shutdown/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Console_Init/170 (Console_Init) @06f6dbd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 151
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Function Console_Init/170 is inline copy in Board_Init/150
+  Clone of Console_Init/151
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: Board_Init/150 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_UART_Init/164 (1073741824 (estimated locally),1.00 per call) 
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SD_Power/156 (524845000 (estimated locally),0.49 per call) 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Microphone_Power/155 (524845000 (estimated locally),0.49 per call) 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Camera_Power/154 (524845000 (estimated locally),0.49 per call) 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SD_Power/156 (1073741824 (estimated locally),1.00 per call) Microphone_Power/155 (1073741824 (estimated locally),1.00 per call) Camera_Power/154 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Console_Shutdown/152 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Console_Init/170 (1073741824 (estimated locally),1.00 per call) Console_Init/151 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Board_Init/150 (621306546 (estimated locally),0.58 per call) 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Board_Init/150 (621555168 (estimated locally),0.58 per call) 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Board_Init/150 (621803889 (estimated locally),0.58 per call) 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Board_Init/150 (1073741824 (estimated locally),1.00 per call) Board_Init/150 (1073741824 (estimated locally),1.00 per call) Board_Init/150 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: GPIO1_IRQHandler/149 (1073741824 (estimated locally),1.00 per call) GPIO0_IRQHandler/148 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: mxc_assert/147 (10631108 (estimated locally),1.00 per call) 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: max20303_sd_power/169 (524845000 (estimated locally),0.49 per call) max20303_init/166 (1073741824 (estimated locally),1.00 per call) 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: max20303_mic_power/168 (524845000 (estimated locally),0.49 per call) max20303_init/166 (1073741824 (estimated locally),1.00 per call) 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: max20303_camera_power/167 (524845000 (estimated locally),0.49 per call) max20303_init/166 (1073741824 (estimated locally),1.00 per call) 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_UART_Shutdown/165 (1073741824 (estimated locally),1.00 per call) 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  previous sharing asm name: 170
+  References: ConsoleUart/142 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_UART_Init/164 (1073741824 (estimated locally),1.00 per call) 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_Delay/163 (621306546 (estimated locally),0.58 per call) mxc_assert/147 (248622 (estimated locally),0.00 per call) LED_Init/162 (621555168 (estimated locally),0.58 per call) mxc_assert/147 (248721 (estimated locally),0.00 per call) PB_Init/161 (621803889 (estimated locally),0.58 per call) Console_Init/170 (inlined) (1073741824 (estimated locally),1.00 per call) MXC_SYS_ClockEnable/160 (1073741824 (estimated locally),1.00 per call) MXC_SYS_ClockEnable/160 (1073741824 (estimated locally),1.00 per call) MXC_SYS_ClockEnable/160 (1073741824 (estimated locally),1.00 per call) 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 (1073741824 (estimated locally),1.00 per call) 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_Handler/159 (1073741824 (estimated locally),1.00 per call) 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once
+  Called by: Board_Init/150 (248622 (estimated locally),0.00 per call) Board_Init/150 (248721 (estimated locally),0.00 per call) 
+  Calls: printf/158 (10631108 (estimated locally),1.00 per call) 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: Console_Init/151 (read) Console_Shutdown/152 (read) Console_Init/170 (read) 
+  Availability: available
+  Varpool flags: initialized
+Trivially needed variables: num_leds/146 led_pin/145 num_pbs/144 pb_pin/143 ConsoleUart/142
+Removing variables:
+
+Final Symbol table:
+
+max20303_sd_power/169 (max20303_sd_power) @0713da80
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+max20303_mic_power/168 (max20303_mic_power) @0713d9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+max20303_camera_power/167 (max20303_camera_power) @0713d930
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+max20303_init/166 (max20303_init) @0713d888
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_UART_Shutdown/165 (MXC_UART_Shutdown) @0713d7e0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_UART_Init/164 (MXC_UART_Init) @0713d738
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_Delay/163 (MXC_Delay) @0713d690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LED_Init/162 (LED_Init) @0713d5e8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PB_Init/161 (PB_Init) @0713d540
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_ClockEnable/160 (MXC_SYS_ClockEnable) @0713d498
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Handler/159 (MXC_GPIO_Handler) @0713d3f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+printf/158 (printf) @0713d348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SD_Get_Connections/157 (SD_Get_Connections) @0713d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.SD_Get_Connections (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+SD_Power/156 (SD_Power) @0713d150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.SD_Power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+Microphone_Power/155 (Microphone_Power) @0713d000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.Microphone_Power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+Camera_Power/154 (Camera_Power) @07124e70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.Camera_Power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+NMI_Handler/153 (NMI_Handler) @07124d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.NMI_Handler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+Console_Shutdown/152 (Console_Shutdown) @07124bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.Console_Shutdown (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+Console_Init/151 (Console_Init) @07124a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.Console_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+Board_Init/150 (Board_Init) @07124930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.Board_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+GPIO1_IRQHandler/149 (GPIO1_IRQHandler) @071247e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public weak section:.text.GPIO1_IRQHandler (implicit_section)
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+GPIO0_IRQHandler/148 (GPIO0_IRQHandler) @07124690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public weak section:.text.GPIO0_IRQHandler (implicit_section)
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+mxc_assert/147 (mxc_assert) @07124540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.mxc_assert (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) executed_once
+  Called by: 
+  Calls: 
+num_leds/146 (num_leds) @07125090
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.num_leds (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+led_pin/145 (led_pin) @07125048
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.led_pin (implicit_section)
+  Aux: @07125090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+num_pbs/144 (num_pbs) @070dbf30
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.num_pbs (implicit_section)
+  Aux: @07125048
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+pb_pin/143 (pb_pin) @070dbee8
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.rodata.pb_pin (implicit_section)
+  Aux: @070dbf30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+ConsoleUart/142 (ConsoleUart) @070dbe10
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.data.ConsoleUart (implicit_section)
+  Aux: @070dbee8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

@@ -1,0 +1,11 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:58:6:mxc_assert	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:70:13:GPIO0_IRQHandler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:79:13:GPIO1_IRQHandler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:85:5:Board_Init	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:119:5:Console_Init	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:131:5:Console_Shutdown	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:143:6:NMI_Handler	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:162:5:Camera_Power	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:174:5:Microphone_Power	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:185:5:SD_Power	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/Boards/MAX78000/FTHR_RevA/Source/board.c:197:6:SD_Get_Connections	4	static

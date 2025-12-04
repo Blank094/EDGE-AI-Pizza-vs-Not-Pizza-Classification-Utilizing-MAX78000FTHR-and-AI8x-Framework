@@ -1,0 +1,3630 @@
+Trivially needed symbols: max9867_init/169 max9867_enable_record/168 max9867_enable_playback/167 max9867_power_enable/166 max9867_headphone_mode/165 max9867_jack_detect_enable/164 max9867_linein_zero_crossing_disable/163 max9867_volume_change_smoothing/162 max9867_digital_volume_slew/161 max9867_microphone_enable/160 max9867_microphone_clock/159 max9867_adc_input/158 max9867_microphone_gain/157 max9867_microphone_preamp/156 max9867_playback_volume/155 max9867_playback_mute/153 max9867_linein_vol_fix/152 max9867_linein_gain/151 max9867_linein_mute/150 max9867_adc_level/149 max9867_dac_level/148 max9867_dac_gain/147 max9867_dac_mute/146 max9867_digital_sidetone_level/145 max9867_digital_sidetone_source/144 max9867_digital_filter/143
+
+
+Initial Symbol table:
+
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reg_read/141 reg_write/140 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @01c61e00
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 reg_write/140 reg_write/140 reg_write/140 reg_write/140 max9867_power_enable/166 reg_read/141 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063b42a0
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_linein_gain/151 max9867_linein_mute/150 max9867_adc_level/149 max9867_adc_input/158 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063b4150
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_playback_volume/155 max9867_headphone_mode/165 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063b4000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 
+  Calls: reg_write/140 reg_write/140 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063aee70
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063aed20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063aebd0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063aea80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae930
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae690
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae3f0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae150
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 reg_update/142 map_vol/154 map_vol/154 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063ae150
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_playback_volume/155 max9867_playback_volume/155 
+  Calls: 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063ae000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9bd0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9930
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a97e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9690
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a93f0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a92a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @063a9150
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063a92a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 max9867_enable_record/168 max9867_enable_playback/167 max9867_enable_playback/167 max9867_headphone_mode/165 max9867_jack_detect_enable/164 max9867_linein_zero_crossing_disable/163 max9867_volume_change_smoothing/162 max9867_digital_volume_slew/161 max9867_microphone_enable/160 max9867_microphone_clock/159 max9867_adc_input/158 max9867_microphone_gain/157 max9867_microphone_gain/157 max9867_microphone_preamp/156 max9867_microphone_preamp/156 max9867_playback_volume/155 max9867_playback_volume/155 max9867_playback_mute/153 max9867_playback_mute/153 max9867_linein_vol_fix/152 max9867_linein_gain/151 max9867_linein_gain/151 max9867_linein_mute/150 max9867_linein_mute/150 max9867_adc_level/149 max9867_dac_level/148 max9867_dac_gain/147 max9867_dac_mute/146 max9867_digital_sidetone_level/145 max9867_digital_sidetone_source/144 
+  Calls: reg_write/140 reg_read/141 
+reg_read/141 (reg_read) @0639fe70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063a92a0
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 reg_update/142 
+  Calls: MXC_I2C_MasterTransaction/170 
+reg_write/140 (reg_write) @0639fd20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063a9150
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_power_enable/166 max9867_power_enable/166 reg_update/142 max9867_digital_filter/143 
+  Calls: MXC_I2C_MasterTransaction/170 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @063a9150
+  References: 
+  Referring: reg_write/140 (write) reg_write/140 (write) reg_write/140 (write) reg_write/140 (addr) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (addr) max9867_enable_playback/167 (read) max9867_enable_record/168 (read) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) 
+  Availability: not-ready
+  Varpool flags:
+MXC_SYS_In_Crit_Section/138 (MXC_SYS_In_Crit_Section) @0634c930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/137 (MXC_SYS_Crit_Exit) @0634cf18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/136 (MXC_SYS_Crit_Enter) @0634cdc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/135 (_mxc_crit_get_state) @0634cc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/134 (_state) @06348678
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/133 (ITM_CheckChar) @062d1690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/132 (ITM_ReceiveChar) @062d1540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/131 (ITM_SendChar) @062d13f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/130 (SysTick_Config) @062d10a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/129 (SCB_GetFPUType) @062c1540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/128 (ARM_MPU_Load) @062c1f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/127 (ARM_MPU_OrderedMemcpy) @062c1dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/126 (ARM_MPU_SetRegionEx) @062c1c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/125 (ARM_MPU_SetRegion) @062c1b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/124 (ARM_MPU_ClrRegion) @062c19d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/123 (ARM_MPU_Disable) @062c1888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/122 (ARM_MPU_Enable) @062c1738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/121 (__NVIC_SystemReset) @062b9f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/120 (__NVIC_GetVector) @062b9dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/119 (__NVIC_SetVector) @062b9c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/118 (NVIC_DecodePriority) @062b9b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/117 (NVIC_EncodePriority) @062b99d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/116 (__NVIC_GetPriority) @062b9888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/115 (__NVIC_SetPriority) @062b9738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/114 (__NVIC_GetActive) @062b95e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/113 (__NVIC_ClearPendingIRQ) @062b9498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/112 (__NVIC_SetPendingIRQ) @062b9348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/111 (__NVIC_GetPendingIRQ) @062b91f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/110 (__NVIC_DisableIRQ) @062b90a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/109 (__NVIC_GetEnableIRQ) @062a1f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/108 (__NVIC_EnableIRQ) @062a1c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/107 (__NVIC_GetPriorityGrouping) @062a1b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/106 (__NVIC_SetPriorityGrouping) @062a19d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/105 (__SMMLA) @06261d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/104 (__QSUB) @06261bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/103 (__QADD) @06261a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/102 (__SEL) @06261930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/101 (__SMLSLDX) @062617e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/100 (__SMLSLD) @06261690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/99 (__SMLSDX) @06261540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/98 (__SMLSD) @062613f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/97 (__SMUSDX) @062612a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/96 (__SMUSD) @06261150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/95 (__SMLALDX) @06261000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/94 (__SMLALD) @06258e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/93 (__SMLADX) @06258d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/92 (__SMLAD) @06258bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/91 (__SMUADX) @06258a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/90 (__SMUAD) @06258930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/89 (__SXTAB16_RORn) @062587e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/88 (__SXTAB16) @06258690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/87 (__SXTB16_RORn) @06258540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/86 (__SXTB16) @062583f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/85 (__UXTAB16) @062582a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/84 (__UXTB16) @06258150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/83 (__USADA8) @06250e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/82 (__USAD8) @06250d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/81 (__UHSAX) @06250bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/80 (__UQSAX) @06250a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/79 (__USAX) @06250930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/78 (__SHSAX) @062507e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/77 (__QSAX) @06250690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/76 (__SSAX) @06250540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/75 (__UHASX) @062503f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/74 (__UQASX) @062502a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/73 (__UASX) @06250150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/72 (__SHASX) @06250000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/71 (__QASX) @0624ae70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/70 (__SASX) @0624ad20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/69 (__UHSUB16) @0624abd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/68 (__UQSUB16) @0624aa80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/67 (__USUB16) @0624a930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/66 (__SHSUB16) @0624a7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/65 (__QSUB16) @0624a690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/64 (__SSUB16) @0624a540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/63 (__UHADD16) @0624a3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/62 (__UQADD16) @0624a2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/61 (__UADD16) @0624a150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/60 (__SHADD16) @0624a000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/59 (__QADD16) @06245e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/58 (__SADD16) @06245d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/57 (__UHSUB8) @06245bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/56 (__UQSUB8) @06245a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/55 (__USUB8) @06245930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/54 (__SHSUB8) @062457e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/53 (__QSUB8) @06245690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/52 (__SSUB8) @06245540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/51 (__UHADD8) @062453f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/50 (__UQADD8) @062452a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/49 (__UADD8) @06245150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/48 (__SHADD8) @06245000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/47 (__QADD8) @0623ae70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/46 (__SADD8) @0623ad20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/45 (__set_FPSCR) @0623abd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/44 (__get_FPSCR) @0623aa80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/43 (__set_FAULTMASK) @0623a930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/42 (__get_FAULTMASK) @0623a7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0623a690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/40 (__set_BASEPRI) @0623a540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/39 (__get_BASEPRI) @0623a3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/38 (__disable_fault_irq) @0623a2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/37 (__enable_fault_irq) @0623a150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/36 (__set_PRIMASK) @0623a000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/35 (__get_PRIMASK) @06236e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/34 (__set_MSP) @06236d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/33 (__get_MSP) @06236bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/32 (__set_PSP) @06236a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/31 (__get_PSP) @06236930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/30 (__get_xPSR) @062367e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/29 (__get_APSR) @06236690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/28 (__get_IPSR) @06236540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/27 (__set_CONTROL) @062363f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/26 (__get_CONTROL) @062362a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/25 (__disable_irq) @06236150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/24 (__enable_irq) @06236000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @06232e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @06232d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @06232bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @06232a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @06232930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @062327e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @06232690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @062323f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @062322a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @06232150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @06232000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @06207e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @06207d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @06207bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @06207a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @06207930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @06207738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @062075e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @06207498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @06207348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @062071f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @062070a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @061c0d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/0 (__cmsis_start) @061c0e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/138 MXC_SYS_Crit_Exit/137 MXC_SYS_Crit_Enter/136 _mxc_crit_get_state/135 _state/134 ITM_CheckChar/133 ITM_ReceiveChar/132 ITM_SendChar/131 SysTick_Config/130 SCB_GetFPUType/129 ARM_MPU_Load/128 ARM_MPU_OrderedMemcpy/127 ARM_MPU_SetRegionEx/126 ARM_MPU_SetRegion/125 ARM_MPU_ClrRegion/124 ARM_MPU_Disable/123 ARM_MPU_Enable/122 __NVIC_SystemReset/121 __NVIC_GetVector/120 __NVIC_SetVector/119 NVIC_DecodePriority/118 NVIC_EncodePriority/117 __NVIC_GetPriority/116 __NVIC_SetPriority/115 __NVIC_GetActive/114 __NVIC_ClearPendingIRQ/113 __NVIC_SetPendingIRQ/112 __NVIC_GetPendingIRQ/111 __NVIC_DisableIRQ/110 __NVIC_GetEnableIRQ/109 __NVIC_EnableIRQ/108 __NVIC_GetPriorityGrouping/107 __NVIC_SetPriorityGrouping/106 __SMMLA/105 __QSUB/104 __QADD/103 __SEL/102 __SMLSLDX/101 __SMLSLD/100 __SMLSDX/99 __SMLSD/98 __SMUSDX/97 __SMUSD/96 __SMLALDX/95 __SMLALD/94 __SMLADX/93 __SMLAD/92 __SMUADX/91 __SMUAD/90 __SXTAB16_RORn/89 __SXTAB16/88 __SXTB16_RORn/87 __SXTB16/86 __UXTAB16/85 __UXTB16/84 __USADA8/83 __USAD8/82 __UHSAX/81 __UQSAX/80 __USAX/79 __SHSAX/78 __QSAX/77 __SSAX/76 __UHASX/75 __UQASX/74 __UASX/73 __SHASX/72 __QASX/71 __SASX/70 __UHSUB16/69 __UQSUB16/68 __USUB16/67 __SHSUB16/66 __QSUB16/65 __SSUB16/64 __UHADD16/63 __UQADD16/62 __UADD16/61 __SHADD16/60 __QADD16/59 __SADD16/58 __UHSUB8/57 __UQSUB8/56 __USUB8/55 __SHSUB8/54 __QSUB8/53 __SSUB8/52 __UHADD8/51 __UQADD8/50 __UADD8/49 __SHADD8/48 __QADD8/47 __SADD8/46 __set_FPSCR/45 __get_FPSCR/44 __set_FAULTMASK/43 __get_FAULTMASK/42 __set_BASEPRI_MAX/41 __set_BASEPRI/40 __get_BASEPRI/39 __disable_fault_irq/38 __enable_fault_irq/37 __set_PRIMASK/36 __get_PRIMASK/35 __set_MSP/34 __get_MSP/33 __set_PSP/32 __get_PSP/31 __get_xPSR/30 __get_APSR/29 __get_IPSR/28 __set_CONTROL/27 __get_CONTROL/26 __disable_irq/25 __enable_irq/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __cmsis_start/0
+
+Reclaimed Symbol table:
+
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reg_read/141 reg_write/140 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 reg_write/140 reg_write/140 reg_write/140 reg_write/140 max9867_power_enable/166 reg_read/141 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_linein_gain/151 max9867_linein_mute/150 max9867_adc_level/149 max9867_adc_input/158 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_playback_volume/155 max9867_headphone_mode/165 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 
+  Calls: reg_write/140 reg_write/140 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 reg_update/142 map_vol/154 map_vol/154 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_playback_volume/155 max9867_playback_volume/155 
+  Calls: 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 max9867_enable_record/168 max9867_enable_playback/167 max9867_enable_playback/167 max9867_headphone_mode/165 max9867_jack_detect_enable/164 max9867_linein_zero_crossing_disable/163 max9867_volume_change_smoothing/162 max9867_digital_volume_slew/161 max9867_microphone_enable/160 max9867_microphone_clock/159 max9867_adc_input/158 max9867_microphone_gain/157 max9867_microphone_gain/157 max9867_microphone_preamp/156 max9867_microphone_preamp/156 max9867_playback_volume/155 max9867_playback_volume/155 max9867_playback_mute/153 max9867_playback_mute/153 max9867_linein_vol_fix/152 max9867_linein_gain/151 max9867_linein_gain/151 max9867_linein_mute/150 max9867_linein_mute/150 max9867_adc_level/149 max9867_dac_level/148 max9867_dac_gain/147 max9867_dac_mute/146 max9867_digital_sidetone_level/145 max9867_digital_sidetone_source/144 
+  Calls: reg_write/140 reg_read/141 
+reg_read/141 (reg_read) @0639fe70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 reg_update/142 
+  Calls: MXC_I2C_MasterTransaction/170 
+reg_write/140 (reg_write) @0639fd20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_power_enable/166 max9867_power_enable/166 reg_update/142 max9867_digital_filter/143 
+  Calls: MXC_I2C_MasterTransaction/170 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: reg_write/140 (write) reg_write/140 (write) reg_write/140 (write) reg_write/140 (addr) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (addr) max9867_enable_playback/167 (read) max9867_enable_record/168 (read) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reg_read/141 reg_write/140 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 reg_write/140 reg_write/140 reg_write/140 reg_write/140 max9867_power_enable/166 reg_read/141 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_linein_gain/151 max9867_linein_mute/150 max9867_adc_level/149 max9867_adc_input/158 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_playback_volume/155 max9867_headphone_mode/165 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 
+  Calls: reg_write/140 reg_write/140 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 reg_update/142 map_vol/154 map_vol/154 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_playback_volume/155 max9867_playback_volume/155 
+  Calls: 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 max9867_enable_record/168 max9867_enable_playback/167 max9867_enable_playback/167 max9867_headphone_mode/165 max9867_jack_detect_enable/164 max9867_linein_zero_crossing_disable/163 max9867_volume_change_smoothing/162 max9867_digital_volume_slew/161 max9867_microphone_enable/160 max9867_microphone_clock/159 max9867_adc_input/158 max9867_microphone_gain/157 max9867_microphone_gain/157 max9867_microphone_preamp/156 max9867_microphone_preamp/156 max9867_playback_volume/155 max9867_playback_volume/155 max9867_playback_mute/153 max9867_playback_mute/153 max9867_linein_vol_fix/152 max9867_linein_gain/151 max9867_linein_gain/151 max9867_linein_mute/150 max9867_linein_mute/150 max9867_adc_level/149 max9867_dac_level/148 max9867_dac_gain/147 max9867_dac_mute/146 max9867_digital_sidetone_level/145 max9867_digital_sidetone_source/144 
+  Calls: reg_write/140 reg_read/141 
+reg_read/141 (reg_read) @0639fe70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 reg_update/142 
+  Calls: MXC_I2C_MasterTransaction/170 
+reg_write/140 (reg_write) @0639fd20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_power_enable/166 max9867_power_enable/166 reg_update/142 max9867_digital_filter/143 
+  Calls: MXC_I2C_MasterTransaction/170 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: reg_write/140 (write) reg_write/140 (write) reg_write/140 (write) reg_write/140 (addr) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (addr) max9867_enable_playback/167 (read) max9867_enable_record/168 (read) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reg_read/141 reg_write/140 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 reg_write/140 reg_write/140 reg_write/140 reg_write/140 max9867_power_enable/166 reg_read/141 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_linein_gain/151 max9867_linein_mute/150 max9867_adc_level/149 max9867_adc_input/158 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 max9867_playback_volume/155 max9867_headphone_mode/165 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 
+  Calls: reg_write/140 reg_write/140 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_playback/167 
+  Calls: reg_update/142 reg_update/142 map_vol/154 map_vol/154 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_playback_volume/155 max9867_playback_volume/155 
+  Calls: 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 reg_update/142 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 
+  Calls: reg_update/142 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_update/142 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/140 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: max9867_enable_record/168 max9867_enable_record/168 max9867_enable_playback/167 max9867_enable_playback/167 max9867_headphone_mode/165 max9867_jack_detect_enable/164 max9867_linein_zero_crossing_disable/163 max9867_volume_change_smoothing/162 max9867_digital_volume_slew/161 max9867_microphone_enable/160 max9867_microphone_clock/159 max9867_adc_input/158 max9867_microphone_gain/157 max9867_microphone_gain/157 max9867_microphone_preamp/156 max9867_microphone_preamp/156 max9867_playback_volume/155 max9867_playback_volume/155 max9867_playback_mute/153 max9867_playback_mute/153 max9867_linein_vol_fix/152 max9867_linein_gain/151 max9867_linein_gain/151 max9867_linein_mute/150 max9867_linein_mute/150 max9867_adc_level/149 max9867_dac_level/148 max9867_dac_gain/147 max9867_dac_mute/146 max9867_digital_sidetone_level/145 max9867_digital_sidetone_source/144 
+  Calls: reg_write/140 reg_read/141 
+reg_read/141 (reg_read) @0639fe70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 reg_update/142 
+  Calls: MXC_I2C_MasterTransaction/170 
+reg_write/140 (reg_write) @0639fd20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_init/169 max9867_power_enable/166 max9867_power_enable/166 reg_update/142 max9867_digital_filter/143 
+  Calls: MXC_I2C_MasterTransaction/170 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: reg_write/140 (write) reg_write/140 (write) reg_write/140 (write) reg_write/140 (addr) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) reg_read/141 (addr) max9867_enable_playback/167 (read) max9867_enable_record/168 (read) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) 
+  Availability: not-ready
+  Varpool flags:
+updating call of max9867_init/169 -> __builtin_unreachable/178: _59 = max9867_power_enable.part.0 (0);
+  updated to:__builtin_unreachable ();
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+reg_write/241 (reg_write) @06547930
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 238
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/241 is inline copy in max9867_digital_sidetone_level/145
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/239 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/240 (reg_read) @06547888
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 237
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/240 is inline copy in max9867_digital_sidetone_level/145
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/239 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/239 (reg_update) @06547738
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 236
+  References: 
+  Referring: 
+  Function reg_update/239 is inline copy in max9867_digital_sidetone_level/145
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_digital_sidetone_level/145 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/240 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/241 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/238 (reg_write) @06547690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 235
+  previous sharing asm name: 241
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/238 is inline copy in max9867_adc_level/149
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/236 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/237 (reg_read) @065475e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 234
+  previous sharing asm name: 240
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/237 is inline copy in max9867_adc_level/149
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/236 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/236 (reg_update) @06547498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 233
+  previous sharing asm name: 239
+  References: 
+  Referring: 
+  Function reg_update/236 is inline copy in max9867_adc_level/149
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_adc_level/149 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/237 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/238 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/235 (reg_write) @065473f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 232
+  previous sharing asm name: 238
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/235 is inline copy in max9867_microphone_enable/160
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/233 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/234 (reg_read) @06547348
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 231
+  previous sharing asm name: 237
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/234 is inline copy in max9867_microphone_enable/160
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/233 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/233 (reg_update) @065471f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 230
+  previous sharing asm name: 236
+  References: 
+  Referring: 
+  Function reg_update/233 is inline copy in max9867_microphone_enable/160
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_microphone_enable/160 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/234 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/235 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/232 (reg_write) @06547150
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 229
+  previous sharing asm name: 235
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/232 is inline copy in max9867_adc_input/158
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/230 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/231 (reg_read) @065470a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 228
+  previous sharing asm name: 234
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/231 is inline copy in max9867_adc_input/158
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/230 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/230 (reg_update) @065457e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 227
+  previous sharing asm name: 233
+  References: 
+  Referring: 
+  Function reg_update/230 is inline copy in max9867_adc_input/158
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_adc_input/158 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/231 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/232 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/229 (reg_write) @06545d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 226
+  previous sharing asm name: 232
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/229 is inline copy in max9867_jack_detect_enable/164
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/227 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/228 (reg_read) @06545a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 225
+  previous sharing asm name: 231
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/228 is inline copy in max9867_jack_detect_enable/164
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/227 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/227 (reg_update) @06545000
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 224
+  previous sharing asm name: 230
+  References: 
+  Referring: 
+  Function reg_update/227 is inline copy in max9867_jack_detect_enable/164
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_jack_detect_enable/164 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/228 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/229 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/226 (reg_write) @06545540
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 223
+  previous sharing asm name: 229
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/226 is inline copy in max9867_linein_zero_crossing_disable/163
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/224 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/225 (reg_read) @065452a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 222
+  previous sharing asm name: 228
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/225 is inline copy in max9867_linein_zero_crossing_disable/163
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/224 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/224 (reg_update) @06545f18
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 221
+  previous sharing asm name: 227
+  References: 
+  Referring: 
+  Function reg_update/224 is inline copy in max9867_linein_zero_crossing_disable/163
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_linein_zero_crossing_disable/163 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/225 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/226 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/223 (reg_write) @06545e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 220
+  previous sharing asm name: 226
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/223 is inline copy in max9867_dac_mute/146
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/221 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/222 (reg_read) @06545dc8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 219
+  previous sharing asm name: 225
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/222 is inline copy in max9867_dac_mute/146
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/221 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/221 (reg_update) @06545c78
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 218
+  previous sharing asm name: 224
+  References: 
+  Referring: 
+  Function reg_update/221 is inline copy in max9867_dac_mute/146
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_dac_mute/146 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/222 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/223 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/220 (reg_write) @06545bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 217
+  previous sharing asm name: 223
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/220 is inline copy in max9867_volume_change_smoothing/162
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/218 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/219 (reg_read) @06545b28
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 216
+  previous sharing asm name: 222
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/219 is inline copy in max9867_volume_change_smoothing/162
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/218 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/218 (reg_update) @065459d8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 215
+  previous sharing asm name: 221
+  References: 
+  Referring: 
+  Function reg_update/218 is inline copy in max9867_volume_change_smoothing/162
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_volume_change_smoothing/162 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/219 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/220 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/217 (reg_write) @06545930
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 214
+  previous sharing asm name: 220
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/217 is inline copy in max9867_digital_volume_slew/161
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/215 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/216 (reg_read) @06545888
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 213
+  previous sharing asm name: 219
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/216 is inline copy in max9867_digital_volume_slew/161
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/215 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/215 (reg_update) @06545738
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 212
+  previous sharing asm name: 218
+  References: 
+  Referring: 
+  Function reg_update/215 is inline copy in max9867_digital_volume_slew/161
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_digital_volume_slew/161 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/216 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/217 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/214 (reg_write) @06545690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 211
+  previous sharing asm name: 217
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/214 is inline copy in max9867_linein_vol_fix/152
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/212 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/213 (reg_read) @065455e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 210
+  previous sharing asm name: 216
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/213 is inline copy in max9867_linein_vol_fix/152
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/212 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/212 (reg_update) @06545498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 209
+  previous sharing asm name: 215
+  References: 
+  Referring: 
+  Function reg_update/212 is inline copy in max9867_linein_vol_fix/152
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_linein_vol_fix/152 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/213 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/214 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/211 (reg_write) @065453f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 208
+  previous sharing asm name: 214
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/211 is inline copy in max9867_dac_level/148
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/209 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/210 (reg_read) @06545348
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 207
+  previous sharing asm name: 213
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/210 is inline copy in max9867_dac_level/148
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/209 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/209 (reg_update) @065451f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 206
+  previous sharing asm name: 212
+  References: 
+  Referring: 
+  Function reg_update/209 is inline copy in max9867_dac_level/148
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_dac_level/148 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/210 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/211 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/208 (reg_write) @06545150
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 205
+  previous sharing asm name: 211
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/208 is inline copy in max9867_digital_sidetone_source/144
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/206 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/207 (reg_read) @065450a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 204
+  previous sharing asm name: 210
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/207 is inline copy in max9867_digital_sidetone_source/144
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/206 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/206 (reg_update) @063b4498
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 203
+  previous sharing asm name: 209
+  References: 
+  Referring: 
+  Function reg_update/206 is inline copy in max9867_digital_sidetone_source/144
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_digital_sidetone_source/144 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/207 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/208 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/205 (reg_write) @063b4dc8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 202
+  previous sharing asm name: 208
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/205 is inline copy in max9867_dac_gain/147
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/203 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/204 (reg_read) @063b4a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 201
+  previous sharing asm name: 207
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/204 is inline copy in max9867_dac_gain/147
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/203 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/203 (reg_update) @063b43f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 200
+  previous sharing asm name: 206
+  References: 
+  Referring: 
+  Function reg_update/203 is inline copy in max9867_dac_gain/147
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_dac_gain/147 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/204 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/205 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/202 (reg_write) @063b4f18
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 199
+  previous sharing asm name: 205
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/202 is inline copy in max9867_microphone_clock/159
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/200 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/201 (reg_read) @063b4e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 198
+  previous sharing asm name: 204
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/201 is inline copy in max9867_microphone_clock/159
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/200 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/200 (reg_update) @063b4d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 197
+  previous sharing asm name: 203
+  References: 
+  Referring: 
+  Function reg_update/200 is inline copy in max9867_microphone_clock/159
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_microphone_clock/159 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/201 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/202 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/199 (reg_write) @063b4bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 196
+  previous sharing asm name: 202
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/199 is inline copy in max9867_headphone_mode/165
+  Clone of reg_write/186
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/197 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_read/198 (reg_read) @063b4b28
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 179
+  previous sharing asm name: 201
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/198 is inline copy in max9867_headphone_mode/165
+  Clone of reg_read/179
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/197 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_update/197 (reg_update) @063b49d8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 142
+  previous sharing asm name: 200
+  References: 
+  Referring: 
+  Function reg_update/197 is inline copy in max9867_headphone_mode/165
+  Clone of reg_update/142
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_headphone_mode/165 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: reg_read/198 (inlined) (1073741824 (estimated locally),1.00 per call) reg_write/199 (inlined) (524845000 (estimated locally),0.49 per call) 
+reg_write/196 (reg_write) @063b4930
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 195
+  previous sharing asm name: 199
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/196 is inline copy in max9867_init/169
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:19208590 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (19208590 (estimated locally),0.07 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (19208590 (estimated locally),0.07 per call) 
+reg_write/195 (reg_write) @063b4888
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 194
+  previous sharing asm name: 196
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/195 is inline copy in max9867_init/169
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:35064970 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (35064970 (estimated locally),0.13 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (35064970 (estimated locally),0.13 per call) 
+reg_write/194 (reg_write) @063b47e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 193
+  previous sharing asm name: 195
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/194 is inline copy in max9867_init/169
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:53128743 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (53128743 (estimated locally),0.20 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (53128743 (estimated locally),0.20 per call) 
+reg_write/193 (reg_write) @0634cf18
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 186
+  previous sharing asm name: 194
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/193 is inline copy in max9867_init/169
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:166348634 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (166348634 (estimated locally),0.63 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (166348634 (estimated locally),0.63 per call) 
+map_vol.part.0/192 (map_vol.part.0) @063b4738
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  next sharing asm name: 190
+  References: 
+  Referring: 
+  Function map_vol.part.0/192 is inline copy in max9867_enable_playback/167
+  Clone of map_vol.part.0/171
+  Availability: local
+  Function flags: count:42255599 (estimated locally) body local split_part nonfreeing_fn
+  Called by: map_vol/191 (inlined) (42255599 (estimated locally),0.04 per call) 
+  Calls: 
+map_vol/191 (map_vol) @063b4690
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 189
+  References: 
+  Referring: 
+  Function map_vol/191 is inline copy in max9867_enable_playback/167
+  Clone of map_vol/154
+  Availability: local
+  Function flags: count:520068911 (estimated locally) body local nonfreeing_fn
+  Called by: max9867_playback_volume/188 (inlined) (520068911 (estimated locally),0.48 per call) 
+  Calls: map_vol.part.0/192 (inlined) (42255599 (estimated locally),0.04 per call) 
+map_vol.part.0/190 (map_vol.part.0) @063b45e8
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  next sharing asm name: 171
+  previous sharing asm name: 192
+  References: 
+  Referring: 
+  Function map_vol.part.0/190 is inline copy in max9867_enable_playback/167
+  Clone of map_vol.part.0/171
+  Availability: local
+  Function flags: count:42255599 (estimated locally) body local split_part nonfreeing_fn
+  Called by: map_vol/189 (inlined) (42255599 (estimated locally),0.04 per call) 
+  Calls: 
+map_vol/189 (map_vol) @063b4540
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 154
+  previous sharing asm name: 191
+  References: 
+  Referring: 
+  Function map_vol/189 is inline copy in max9867_enable_playback/167
+  Clone of map_vol/154
+  Availability: local
+  Function flags: count:520068911 (estimated locally) body local nonfreeing_fn
+  Called by: max9867_playback_volume/188 (inlined) (520068911 (estimated locally),0.48 per call) 
+  Calls: map_vol.part.0/190 (inlined) (42255599 (estimated locally),0.04 per call) 
+max9867_playback_volume/188 (max9867_playback_volume) @0634cb28
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 155
+  References: 
+  Referring: 
+  Function max9867_playback_volume/188 is inline copy in max9867_enable_playback/167
+  Clone of max9867_playback_volume/155
+  Availability: local
+  Function flags: count:520068911 (estimated locally) body local
+  Called by: max9867_enable_playback/167 (inlined) (520068911 (estimated locally),0.48 per call) 
+  Calls: map_vol/189 (inlined) (520068911 (estimated locally),0.48 per call) map_vol/191 (inlined) (520068911 (estimated locally),0.48 per call) reg_update/142 (520068911 (estimated locally),0.48 per call) reg_update/142 (254209682 (estimated locally),0.24 per call) 
+max9867_linein_gain/187 (max9867_linein_gain) @062c1b28
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 151
+  References: 
+  Referring: 
+  Function max9867_linein_gain/187 is inline copy in max9867_enable_record/168
+  Clone of max9867_linein_gain/151
+  Availability: local
+  Function flags: count:124834526 (estimated locally) body local
+  Called by: max9867_enable_record/168 (inlined) (124834526 (estimated locally),0.12 per call) 
+  Calls: reg_update/142 (124834526 (estimated locally),0.12 per call) reg_update/142 (61019116 (estimated locally),0.06 per call) 
+reg_write/186 (reg_write) @062d1540
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 185
+  previous sharing asm name: 193
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/186 is inline copy in reg_update/142
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local
+  Called by: reg_update/142 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (524845000 (estimated locally),0.49 per call) 
+reg_write/185 (reg_write) @062d13f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 184
+  previous sharing asm name: 186
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/185 is inline copy in max9867_power_enable/166
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local
+  Called by: max9867_power_enable.part.0/173 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (536870912 (estimated locally),0.50 per call) 
+reg_write/184 (reg_write) @062d10a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 183
+  previous sharing asm name: 185
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/184 is inline copy in max9867_power_enable/166
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:536870913 (estimated locally) body local
+  Called by: max9867_power_enable/166 (inlined) (536870913 (estimated locally),0.50 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (536870913 (estimated locally),0.50 per call) 
+reg_write/183 (reg_write) @062c1dc8
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 180
+  previous sharing asm name: 184
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/183 is inline copy in max9867_init/169
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:1020054738 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (1020054738 (estimated locally),3.85 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1020054738 (estimated locally),3.85 per call) 
+max9867_linein_mute.part.0/182 (max9867_linein_mute.part.0) @062c1f18
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  next sharing asm name: 172
+  References: 
+  Referring: 
+  Function max9867_linein_mute.part.0/182 is inline copy in max9867_enable_record/168
+  Clone of max9867_linein_mute.part.0/172
+  Availability: local
+  Function flags: count:168557257 (estimated locally) body local split_part
+  Called by: max9867_linein_mute/181 (inlined) (168557257 (estimated locally),0.16 per call) 
+  Calls: reg_update/142 (168557257 (estimated locally),0.16 per call) 
+max9867_linein_mute/181 (max9867_linein_mute) @062613f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 150
+  References: 
+  Referring: 
+  Function max9867_linein_mute/181 is inline copy in max9867_enable_record/168
+  Clone of max9867_linein_mute/150
+  Availability: local
+  Function flags: count:255389785 (estimated locally) body local
+  Called by: max9867_enable_record/168 (inlined) (255389785 (estimated locally),0.24 per call) 
+  Calls: reg_update/142 (255389785 (estimated locally),0.24 per call) max9867_linein_mute.part.0/182 (inlined) (168557257 (estimated locally),0.16 per call) 
+reg_write/180 (reg_write) @062612a0
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 140
+  previous sharing asm name: 183
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/180 is inline copy in max9867_digital_filter/143
+  Clone of reg_write/140
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_digital_filter/143 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+reg_read/179 (reg_read) @06261150
+  Type: function definition analyzed
+  Visibility: semantic_interposition
+  next sharing asm name: 141
+  previous sharing asm name: 198
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/179 is inline copy in reg_update/142
+  Clone of reg_read/141
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: reg_update/142 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (1073741824 (estimated locally),1.00 per call) 
+max9867_power_enable.part.0/173 (max9867_power_enable.part.0) @062a1f18
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Function max9867_power_enable.part.0/173 is inline copy in max9867_power_enable/166
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part
+  Called by: max9867_power_enable/166 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: reg_write/185 (inlined) (536870912 (estimated locally),0.50 per call) 
+max9867_linein_mute.part.0/172 (max9867_linein_mute.part.0) @06258d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  previous sharing asm name: 182
+  References: 
+  Referring: 
+  Function max9867_linein_mute.part.0/172 is inline copy in max9867_linein_mute/150
+  Availability: local
+  Function flags: count:708669600 (estimated locally) body local split_part
+  Called by: max9867_linein_mute/150 (inlined) (708669600 (estimated locally),0.66 per call) 
+  Calls: reg_update/142 (708669600 (estimated locally),0.66 per call) 
+map_vol.part.0/171 (map_vol.part.0) @062583f0
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  previous sharing asm name: 190
+  References: 
+  Referring: 
+  Function map_vol.part.0/171 is inline copy in map_vol/154
+  Availability: local
+  Function flags: count:87241523 (estimated locally) body local split_part nonfreeing_fn
+  Called by: map_vol/154 (inlined) (87241523 (estimated locally),0.08 per call) 
+  Calls: 
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: reg_write/241 (524845000 (estimated locally),0.49 per call) reg_read/240 (1073741824 (estimated locally),1.00 per call) reg_write/238 (524845000 (estimated locally),0.49 per call) reg_read/237 (1073741824 (estimated locally),1.00 per call) reg_write/235 (524845000 (estimated locally),0.49 per call) reg_read/234 (1073741824 (estimated locally),1.00 per call) reg_write/232 (524845000 (estimated locally),0.49 per call) reg_read/231 (1073741824 (estimated locally),1.00 per call) reg_write/229 (524845000 (estimated locally),0.49 per call) reg_read/228 (1073741824 (estimated locally),1.00 per call) reg_write/226 (524845000 (estimated locally),0.49 per call) reg_read/225 (1073741824 (estimated locally),1.00 per call) reg_write/223 (524845000 (estimated locally),0.49 per call) reg_read/222 (1073741824 (estimated locally),1.00 per call) reg_write/220 (524845000 (estimated locally),0.49 per call) reg_read/219 (1073741824 (estimated locally),1.00 per call) reg_write/217 (524845000 (estimated locally),0.49 per call) reg_read/216 (1073741824 (estimated locally),1.00 per call) reg_write/214 (524845000 (estimated locally),0.49 per call) reg_read/213 (1073741824 (estimated locally),1.00 per call) reg_write/211 (524845000 (estimated locally),0.49 per call) reg_read/210 (1073741824 (estimated locally),1.00 per call) reg_write/208 (524845000 (estimated locally),0.49 per call) reg_read/207 (1073741824 (estimated locally),1.00 per call) reg_write/205 (524845000 (estimated locally),0.49 per call) reg_read/204 (1073741824 (estimated locally),1.00 per call) reg_write/202 (524845000 (estimated locally),0.49 per call) reg_read/201 (1073741824 (estimated locally),1.00 per call) reg_write/199 (524845000 (estimated locally),0.49 per call) reg_read/198 (1073741824 (estimated locally),1.00 per call) reg_write/196 (19208590 (estimated locally),0.07 per call) reg_write/195 (35064970 (estimated locally),0.13 per call) reg_write/194 (53128743 (estimated locally),0.20 per call) reg_write/193 (166348634 (estimated locally),0.63 per call) reg_write/186 (524845000 (estimated locally),0.49 per call) reg_write/185 (536870912 (estimated locally),0.50 per call) reg_write/184 (536870913 (estimated locally),0.50 per call) reg_write/183 (1020054738 (estimated locally),3.85 per call) reg_write/180 (1073741824 (estimated locally),1.00 per call) reg_read/179 (1073741824 (estimated locally),1.00 per call) reg_read/141 (262490510 (estimated locally),0.99 per call) reg_write/140 (11571440 (estimated locally),0.04 per call) 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:264901109 (estimated locally) body
+  Called by: 
+  Calls: reg_write/196 (inlined) (19208590 (estimated locally),0.07 per call) reg_write/140 (inlined) (11571440 (estimated locally),0.04 per call) reg_write/195 (inlined) (35064970 (estimated locally),0.13 per call) reg_write/194 (inlined) (53128743 (estimated locally),0.20 per call) reg_write/183 (inlined) (1020054738 (estimated locally),3.85 per call) reg_write/193 (inlined) (166348634 (estimated locally),0.63 per call) reg_read/141 (inlined) (262490510 (estimated locally),0.99 per call) 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (40272616 (estimated locally),0.04 per call) reg_update/142 (61019116 (estimated locally),0.06 per call) max9867_linein_gain/187 (inlined) (124834526 (estimated locally),0.12 per call) max9867_linein_mute/181 (inlined) (255389785 (estimated locally),0.24 per call) reg_update/142 (522483197 (estimated locally),0.49 per call) reg_update/142 (1068909985 (estimated locally),1.00 per call) 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: i2c_req/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (167778389 (estimated locally),0.16 per call) reg_update/142 (254209682 (estimated locally),0.24 per call) max9867_playback_volume/188 (inlined) (520068911 (estimated locally),0.48 per call) reg_update/142 (1063970775 (estimated locally),0.99 per call) 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: max9867_power_enable.part.0/173 (inlined) (536870912 (estimated locally),0.50 per call) reg_write/184 (inlined) (536870913 (estimated locally),0.50 per call) 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/197 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/227 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/224 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/218 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/215 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/233 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/200 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/230 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (524845000 (estimated locally),0.49 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (524845000 (estimated locally),0.49 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  previous sharing asm name: 188
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (524845000 (estimated locally),0.49 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) map_vol/154 (1073741824 (estimated locally),1.00 per call) map_vol/154 (1073741824 (estimated locally),1.00 per call) 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  previous sharing asm name: 189
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn
+  Called by: max9867_playback_volume/155 (1073741824 (estimated locally),1.00 per call) max9867_playback_volume/155 (1073741824 (estimated locally),1.00 per call) 
+  Calls: map_vol.part.0/171 (inlined) (87241523 (estimated locally),0.08 per call) 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (708669601 (estimated locally),0.66 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/212 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  previous sharing asm name: 187
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/142 (524845000 (estimated locally),0.49 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  previous sharing asm name: 181
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: max9867_linein_mute.part.0/172 (inlined) (708669600 (estimated locally),0.66 per call) reg_update/142 (1073741824 (estimated locally),1.00 per call) 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/236 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/209 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/203 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/221 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: 
+  Calls: reg_update/239 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_update/206 (inlined) (1073741824 (estimated locally),1.00 per call) 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_write/180 (inlined) (1073741824 (estimated locally),1.00 per call) 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  previous sharing asm name: 197
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local
+  Called by: max9867_playback_volume/188 (520068911 (estimated locally),0.48 per call) max9867_playback_volume/188 (254209682 (estimated locally),0.24 per call) max9867_linein_gain/187 (124834526 (estimated locally),0.12 per call) max9867_linein_gain/187 (61019116 (estimated locally),0.06 per call) max9867_linein_mute.part.0/182 (168557257 (estimated locally),0.16 per call) max9867_linein_mute/181 (255389785 (estimated locally),0.24 per call) max9867_enable_record/168 (40272616 (estimated locally),0.04 per call) max9867_enable_record/168 (61019116 (estimated locally),0.06 per call) max9867_enable_record/168 (522483197 (estimated locally),0.49 per call) max9867_enable_record/168 (1068909985 (estimated locally),1.00 per call) max9867_enable_playback/167 (167778389 (estimated locally),0.16 per call) max9867_enable_playback/167 (254209682 (estimated locally),0.24 per call) max9867_enable_playback/167 (1063970775 (estimated locally),0.99 per call) max9867_microphone_gain/157 (524845000 (estimated locally),0.49 per call) max9867_microphone_gain/157 (1073741824 (estimated locally),1.00 per call) max9867_microphone_preamp/156 (524845000 (estimated locally),0.49 per call) max9867_microphone_preamp/156 (1073741824 (estimated locally),1.00 per call) max9867_playback_volume/155 (524845000 (estimated locally),0.49 per call) max9867_playback_volume/155 (1073741824 (estimated locally),1.00 per call) max9867_playback_mute/153 (708669601 (estimated locally),0.66 per call) max9867_playback_mute/153 (1073741824 (estimated locally),1.00 per call) max9867_linein_gain/151 (524845000 (estimated locally),0.49 per call) max9867_linein_gain/151 (1073741824 (estimated locally),1.00 per call) max9867_linein_mute/150 (1073741824 (estimated locally),1.00 per call) max9867_linein_mute.part.0/172 (708669600 (estimated locally),0.66 per call) 
+  Calls: reg_write/186 (inlined) (524845000 (estimated locally),0.49 per call) reg_read/179 (inlined) (1073741824 (estimated locally),1.00 per call) 
+reg_read/141 (reg_read) @0639fe70
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  previous sharing asm name: 179
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_read/141 is inline copy in max9867_init/169
+  Availability: local
+  Function flags: count:262490510 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (262490510 (estimated locally),0.99 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (262490510 (estimated locally),0.99 per call) 
+reg_write/140 (reg_write) @0639fd20
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  previous sharing asm name: 180
+  References: i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (write) i2c_req/139 (addr) 
+  Referring: 
+  Function reg_write/140 is inline copy in max9867_init/169
+  Availability: local
+  Function flags: count:11571440 (estimated locally) body local
+  Called by: max9867_init/169 (inlined) (11571440 (estimated locally),0.04 per call) 
+  Calls: MXC_I2C_MasterTransaction/170 (11571440 (estimated locally),0.04 per call) 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: reg_write/140 (write) reg_write/140 (write) reg_write/140 (write) max9867_enable_playback/167 (read) reg_read/141 (addr) reg_read/141 (write) reg_read/141 (write) reg_read/141 (write) max9867_enable_record/168 (read) reg_write/140 (addr) reg_read/141 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) max9867_init/169 (write) reg_read/179 (write) reg_read/179 (write) reg_read/179 (write) reg_read/179 (write) reg_read/179 (addr) reg_write/180 (write) reg_write/180 (write) reg_write/180 (write) reg_write/180 (addr) reg_write/183 (write) reg_write/183 (write) reg_write/183 (write) reg_write/183 (addr) reg_write/184 (write) reg_write/184 (write) reg_write/184 (write) reg_write/184 (addr) reg_write/185 (write) reg_write/185 (write) reg_write/185 (write) reg_write/185 (addr) reg_write/186 (write) reg_write/186 (write) reg_write/186 (write) reg_write/186 (addr) reg_write/193 (write) reg_write/193 (write) reg_write/193 (write) reg_write/193 (addr) reg_write/194 (write) reg_write/194 (write) reg_write/194 (write) reg_write/194 (addr) reg_write/195 (write) reg_write/195 (write) reg_write/195 (write) reg_write/195 (addr) reg_write/196 (write) reg_write/196 (write) reg_write/196 (write) reg_write/196 (addr) reg_read/198 (write) reg_read/198 (write) reg_read/198 (write) reg_read/198 (write) reg_read/198 (addr) reg_write/199 (write) reg_write/199 (write) reg_write/199 (write) reg_write/199 (addr) reg_read/201 (write) reg_read/201 (write) reg_read/201 (write) reg_read/201 (write) reg_read/201 (addr) reg_write/202 (write) reg_write/202 (write) reg_write/202 (write) reg_write/202 (addr) reg_read/204 (write) reg_read/204 (write) reg_read/204 (write) reg_read/204 (write) reg_read/204 (addr) reg_write/205 (write) reg_write/205 (write) reg_write/205 (write) reg_write/205 (addr) reg_read/207 (write) reg_read/207 (write) reg_read/207 (write) reg_read/207 (write) reg_read/207 (addr) reg_write/208 (write) reg_write/208 (write) reg_write/208 (write) reg_write/208 (addr) reg_read/210 (write) reg_read/210 (write) reg_read/210 (write) reg_read/210 (write) reg_read/210 (addr) reg_write/211 (write) reg_write/211 (write) reg_write/211 (write) reg_write/211 (addr) reg_read/213 (write) reg_read/213 (write) reg_read/213 (write) reg_read/213 (write) reg_read/213 (addr) reg_write/214 (write) reg_write/214 (write) reg_write/214 (write) reg_write/214 (addr) reg_read/216 (write) reg_read/216 (write) reg_read/216 (write) reg_read/216 (write) reg_read/216 (addr) reg_write/217 (write) reg_write/217 (write) reg_write/217 (write) reg_write/217 (addr) reg_read/219 (write) reg_read/219 (write) reg_read/219 (write) reg_read/219 (write) reg_read/219 (addr) reg_write/220 (write) reg_write/220 (write) reg_write/220 (write) reg_write/220 (addr) reg_read/222 (write) reg_read/222 (write) reg_read/222 (write) reg_read/222 (write) reg_read/222 (addr) reg_write/223 (write) reg_write/223 (write) reg_write/223 (write) reg_write/223 (addr) reg_read/225 (write) reg_read/225 (write) reg_read/225 (write) reg_read/225 (write) reg_read/225 (addr) reg_write/226 (write) reg_write/226 (write) reg_write/226 (write) reg_write/226 (addr) reg_read/228 (write) reg_read/228 (write) reg_read/228 (write) reg_read/228 (write) reg_read/228 (addr) reg_write/229 (write) reg_write/229 (write) reg_write/229 (write) reg_write/229 (addr) reg_read/231 (write) reg_read/231 (write) reg_read/231 (write) reg_read/231 (write) reg_read/231 (addr) reg_write/232 (write) reg_write/232 (write) reg_write/232 (write) reg_write/232 (addr) reg_read/234 (write) reg_read/234 (write) reg_read/234 (write) reg_read/234 (write) reg_read/234 (addr) reg_write/235 (write) reg_write/235 (write) reg_write/235 (write) reg_write/235 (addr) reg_read/237 (write) reg_read/237 (write) reg_read/237 (write) reg_read/237 (write) reg_read/237 (addr) reg_write/238 (write) reg_write/238 (write) reg_write/238 (write) reg_write/238 (addr) reg_read/240 (write) reg_read/240 (write) reg_read/240 (write) reg_read/240 (write) reg_read/240 (addr) reg_write/241 (write) reg_write/241 (write) reg_write/241 (write) reg_write/241 (addr) 
+  Availability: available
+  Varpool flags:
+updating call of max9867_digital_sidetone_source/144 -> reg_update/206: _5 = reg_update (11, 192, _1);
+  updated to:_5 = reg_update (11, 192, _1);
+updating call of max9867_dac_mute/146 -> reg_update/221: _5 = reg_update (12, 64, iftmp.7_1);
+  updated to:_5 = reg_update (12, 64, iftmp.7_1);
+updating call of max9867_dac_gain/147 -> reg_update/203: _5 = reg_update (12, 48, _1);
+  updated to:_5 = reg_update (12, 48, _1);
+updating call of max9867_dac_level/148 -> reg_update/209: _6 = reg_update (12, 15, daca_3);
+  updated to:_6 = reg_update (12, 15, daca_3);
+updating call of max9867_adc_level/149 -> reg_update/239: _12 = reg_update (13, 255, _5);
+  updated to:_12 = reg_update (13, 255, _5);
+updating call of max9867_linein_vol_fix/152 -> reg_update/212: _5 = reg_update (9, 1, iftmp.11_1);
+  updated to:_5 = reg_update (9, 1, iftmp.11_1);
+updating call of max9867_adc_input/158 -> reg_update/230: _13 = reg_update (20, 240, _8);
+  updated to:_13 = reg_update (20, 240, _8);
+updating call of max9867_microphone_clock/159 -> reg_update/200: _5 = reg_update (21, 192, _1);
+  updated to:_5 = reg_update (21, 192, _1);
+updating call of max9867_microphone_enable/160 -> reg_update/239: _9 = reg_update (21, 48, _2);
+  updated to:_9 = reg_update (21, 48, _2);
+updating call of max9867_digital_volume_slew/161 -> reg_update/215: _5 = reg_update (22, 128, iftmp.16_1);
+  updated to:_5 = reg_update (22, 128, iftmp.16_1);
+updating call of max9867_volume_change_smoothing/162 -> reg_update/218: _5 = reg_update (22, 64, iftmp.17_1);
+  updated to:_5 = reg_update (22, 64, iftmp.17_1);
+updating call of max9867_linein_zero_crossing_disable/163 -> reg_update/224: _5 = reg_update (22, 32, iftmp.18_1);
+  updated to:_5 = reg_update (22, 32, iftmp.18_1);
+updating call of max9867_jack_detect_enable/164 -> reg_update/239: _5 = reg_update (22, 8, iftmp.19_1);
+  updated to:_5 = reg_update (22, 8, iftmp.19_1);
+updating call of max9867_headphone_mode/165 -> reg_update/239: _4 = reg_update (22, 7, mode_2(D));
+  updated to:_4 = reg_update (22, 7, mode_2(D));
+updating call of max9867_enable_playback/167 -> map_vol/189: voll_16 = map_vol (0.0);
+  updated to:voll_16 = map_vol (0.0);
+Trivially needed variables: i2c_req/139
+Removing variables:
+
+Final Symbol table:
+
+MXC_I2C_MasterTransaction/170 (MXC_I2C_MasterTransaction) @063b4348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+max9867_init/169 (max9867_init) @063b42a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:264901109 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_enable_record/168 (max9867_enable_record) @063b4150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_enable_record (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_enable_playback/167 (max9867_enable_playback) @063b4000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_enable_playback (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_power_enable/166 (max9867_power_enable) @063aee70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_power_enable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_headphone_mode/165 (max9867_headphone_mode) @063aed20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_headphone_mode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_jack_detect_enable/164 (max9867_jack_detect_enable) @063aebd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_jack_detect_enable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_linein_zero_crossing_disable/163 (max9867_linein_zero_crossing_disable) @063aea80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_linein_zero_crossing_disable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_volume_change_smoothing/162 (max9867_volume_change_smoothing) @063ae930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_volume_change_smoothing (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_digital_volume_slew/161 (max9867_digital_volume_slew) @063ae7e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_digital_volume_slew (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_microphone_enable/160 (max9867_microphone_enable) @063ae690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_microphone_enable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_microphone_clock/159 (max9867_microphone_clock) @063ae540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_microphone_clock (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_adc_input/158 (max9867_adc_input) @063ae3f0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_adc_input (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_microphone_gain/157 (max9867_microphone_gain) @063ae2a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_microphone_gain (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_microphone_preamp/156 (max9867_microphone_preamp) @063ae150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_microphone_preamp (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_playback_volume/155 (max9867_playback_volume) @063ae000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_playback_volume (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+map_vol/154 (map_vol) @063a9e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.map_vol (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local nonfreeing_fn
+  Called by: 
+  Calls: 
+max9867_playback_mute/153 (max9867_playback_mute) @063a9d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_playback_mute (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_linein_vol_fix/152 (max9867_linein_vol_fix) @063a9bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_linein_vol_fix (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_linein_gain/151 (max9867_linein_gain) @063a9a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_linein_gain (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_linein_mute/150 (max9867_linein_mute) @063a9930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_linein_mute (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_adc_level/149 (max9867_adc_level) @063a97e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_adc_level (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_dac_level/148 (max9867_dac_level) @063a9690
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_dac_level (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_dac_gain/147 (max9867_dac_gain) @063a9540
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_dac_gain (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_dac_mute/146 (max9867_dac_mute) @063a93f0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_dac_mute (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_digital_sidetone_level/145 (max9867_digital_sidetone_level) @063a92a0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_digital_sidetone_level (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_digital_sidetone_source/144 (max9867_digital_sidetone_source) @063a9150
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_digital_sidetone_source (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max9867_digital_filter/143 (max9867_digital_filter) @063a9000
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.max9867_digital_filter (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+reg_update/142 (reg_update) @0639f000
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.text.reg_update (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local
+  Called by: 
+  Calls: 
+i2c_req/139 (i2c_req) @0639e288
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.bss.i2c_req (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

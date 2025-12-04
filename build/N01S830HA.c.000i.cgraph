@@ -1,0 +1,2380 @@
+Trivially needed symbols: N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_write/153 N01S830HA_read/152 N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 N01S830HA_init/149 _g_err/146 g_current_mode/145
+
+
+Initial Symbol table:
+
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/154 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read/152 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read_mode_reg/155 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_write/153 _transmit_spi_header/148 N01S830HA_read/152 N01S830HA_read/152 N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @01c61e00
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: spi_transmit/161 spi_transmit/161 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c30a8
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: MXC_Delay/164 spi_transmit/161 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c3e70
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 _transmit_spi_header/148 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c3d20
+  References: g_current_mode/145 (read) g_current_mode/145 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 spi_transmit/161 _parse_spi_header/147 memset/163 _transmit_spi_header/148 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c3bd0
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 
+  Calls: spi_exit_quadmode/160 spi_transmit/161 spi_enter_quadmode/162 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c3a80
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_enter_quadmode/162 spi_transmit/161 spi_exit_quadmode/160 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c3930
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) N01S830HA_hold_pin/144 (addr) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_init/156 printf/159 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 MXC_GPIO_OutSet/158 MXC_GPIO_Config/157 N01S830HA_exit_quadmode/151 spi_init/156 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  Aux: @071c3540
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_write/153 N01S830HA_read/152 
+  Calls: spi_transmit/161 _parse_spi_header/147 
+_parse_spi_header/147 (_parse_spi_header) @071c3540
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  Aux: @071c3d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: _transmit_spi_header/148 N01S830HA_read/152 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071c37e0
+  References: 
+  Referring: N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_read/152 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) _transmit_spi_header/148 (write) _transmit_spi_header/148 (read) _transmit_spi_header/148 (read) N01S830HA_write_mode_reg/154 (write) N01S830HA_write_mode_reg/154 (read) N01S830HA_write_mode_reg/154 (read) N01S830HA_read_mode_reg/155 (write) N01S830HA_read_mode_reg/155 (read) N01S830HA_read_mode_reg/155 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  Aux: @071be6c0
+  References: 
+  Referring: N01S830HA_enter_quadmode/150 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) 
+  Availability: not-ready
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  Aux: @071c3930
+  References: 
+  Referring: N01S830HA_init/149 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_spi_pins/143 (fastspi_spi_pins) @0717dbd0
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+fastspi_ss_pin/142 (fastspi_ss_pin) @0717db40
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section) @07181a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit) @071812a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter) @07181e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state) @07181d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state) @0717d708
+  Type: variable definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar) @071072a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @07107150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @07107000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @070fbe70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @070fbd20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @070fbbd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @070fba80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @070fb930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @070fb7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @070fb690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @070fb540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @070fb3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @070edbd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @070eda80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @070ed930
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @070ed7e0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @070ed690
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @070ed540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @070ed3f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @070ed2a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @070ed150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @070ed000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @070e3150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @070e3000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @070e3e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @070e3d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @070e3bd0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @070e3a80
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @0709db28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @0709d9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @0709d888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @0709d738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @0709d5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @0709d498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @0709d348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @0709d1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @0709d0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @07092f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @07092dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @07092c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @07092b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @070929d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @07092888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @07092738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @070925e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @07092498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @07092348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @070921f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @070920a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @0708df18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @0708dc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @0708db28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @0708d9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @0708d888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @0708d738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @0708d5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @0708d498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @0708d348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @0708d1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @0708d0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @07088f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @07088dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @07088c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @07088b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @070889d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @07088888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @07088738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @070885e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @07088498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @07088348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @070881f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @070880a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @0707ef18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @0707edc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @0707ec78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @0707eb28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @0707e9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @0707e888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @0707e738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @0707e5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @0707e498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @0707e348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @0707e1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @0707e0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @07076f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @07076dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @07076c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @07076b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @070769d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @07076888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @07076738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @070765e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @07076498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @07076348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @070761f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @070760a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @07071f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @07071dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @07071c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @07071b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @070719d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @07071888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @07071738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @070715e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @07071498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @07071348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @070711f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @070710a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @0706df18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @0706ddc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @0706dc78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @0706db28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @0706d9d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @0706d888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @0706d738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @0706d5e8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @0706d498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @0706d1f8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @0706d0a8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @07066f18
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @07066dc8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @07066c78
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @07066b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @070669d8
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @07066888
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @07066738
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @07066540
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @070663f0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @070662a0
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @07066150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @07066000
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @07018b28
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @07018e70
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @07018d20
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @06f96498
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @06f96348
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @06f96150
+  Type: function definition
+  Visibility: semantic_interposition
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: fastspi_spi_pins/143 fastspi_ss_pin/142 MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_EnableIRQ/111 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/154 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read/152 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read_mode_reg/155 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_write/153 _transmit_spi_header/148 N01S830HA_read/152 N01S830HA_read/152 N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: spi_transmit/161 spi_transmit/161 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: MXC_Delay/164 spi_transmit/161 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 _transmit_spi_header/148 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_current_mode/145 (read) g_current_mode/145 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 spi_transmit/161 _parse_spi_header/147 memset/163 _transmit_spi_header/148 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 
+  Calls: spi_exit_quadmode/160 spi_transmit/161 spi_enter_quadmode/162 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_enter_quadmode/162 spi_transmit/161 spi_exit_quadmode/160 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) N01S830HA_hold_pin/144 (addr) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_init/156 printf/159 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 MXC_GPIO_OutSet/158 MXC_GPIO_Config/157 N01S830HA_exit_quadmode/151 spi_init/156 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_write/153 N01S830HA_read/152 
+  Calls: spi_transmit/161 _parse_spi_header/147 
+_parse_spi_header/147 (_parse_spi_header) @071c3540
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: _transmit_spi_header/148 N01S830HA_read/152 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_read/152 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) _transmit_spi_header/148 (write) _transmit_spi_header/148 (read) _transmit_spi_header/148 (read) N01S830HA_write_mode_reg/154 (write) N01S830HA_write_mode_reg/154 (read) N01S830HA_write_mode_reg/154 (read) N01S830HA_read_mode_reg/155 (write) N01S830HA_read_mode_reg/155 (read) N01S830HA_read_mode_reg/155 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_enter_quadmode/150 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) 
+  Availability: not-ready
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: N01S830HA_init/149 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/154 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read/152 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read_mode_reg/155 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_write/153 _transmit_spi_header/148 N01S830HA_read/152 N01S830HA_read/152 N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: spi_transmit/161 spi_transmit/161 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: MXC_Delay/164 spi_transmit/161 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 _transmit_spi_header/148 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_current_mode/145 (read) g_current_mode/145 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 spi_transmit/161 _parse_spi_header/147 memset/163 _transmit_spi_header/148 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 
+  Calls: spi_exit_quadmode/160 spi_transmit/161 spi_enter_quadmode/162 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_enter_quadmode/162 spi_transmit/161 spi_exit_quadmode/160 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) N01S830HA_hold_pin/144 (addr) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_init/156 printf/159 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 MXC_GPIO_OutSet/158 MXC_GPIO_Config/157 N01S830HA_exit_quadmode/151 spi_init/156 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_write/153 N01S830HA_read/152 
+  Calls: spi_transmit/161 _parse_spi_header/147 
+_parse_spi_header/147 (_parse_spi_header) @071c3540
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: _transmit_spi_header/148 N01S830HA_read/152 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_read/152 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) _transmit_spi_header/148 (write) _transmit_spi_header/148 (read) _transmit_spi_header/148 (read) N01S830HA_write_mode_reg/154 (write) N01S830HA_write_mode_reg/154 (read) N01S830HA_write_mode_reg/154 (read) N01S830HA_read_mode_reg/155 (write) N01S830HA_read_mode_reg/155 (read) N01S830HA_read_mode_reg/155 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_enter_quadmode/150 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) 
+  Availability: not-ready
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: N01S830HA_init/149 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/154 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read/152 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_read_mode_reg/155 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_write/153 _transmit_spi_header/148 N01S830HA_read/152 N01S830HA_read/152 N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 N01S830HA_enter_quadmode/150 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: spi_transmit/161 spi_transmit/161 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 N01S830HA_init/149 
+  Calls: MXC_Delay/164 spi_transmit/161 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 _transmit_spi_header/148 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: g_current_mode/145 (read) g_current_mode/145 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_transmit/161 spi_transmit/161 _parse_spi_header/147 memset/163 _transmit_spi_header/148 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_init/149 
+  Calls: spi_exit_quadmode/160 spi_transmit/161 spi_enter_quadmode/162 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) g_current_mode/145 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_enter_quadmode/162 spi_transmit/161 spi_exit_quadmode/160 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) N01S830HA_hold_pin/144 (addr) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: spi_init/156 printf/159 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 N01S830HA_read_mode_reg/155 N01S830HA_write_mode_reg/154 MXC_GPIO_OutSet/158 MXC_GPIO_Config/157 N01S830HA_exit_quadmode/151 spi_init/156 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: _g_err/146 (write) _g_err/146 (read) _g_err/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: N01S830HA_write/153 N01S830HA_read/152 
+  Calls: spi_transmit/161 _parse_spi_header/147 
+_parse_spi_header/147 (_parse_spi_header) @071c3540
+  Type: function definition analyzed
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: _transmit_spi_header/148 N01S830HA_read/152 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_init/149 (write) N01S830HA_init/149 (read) N01S830HA_init/149 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (read) N01S830HA_enter_quadmode/150 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (read) N01S830HA_exit_quadmode/151 (read) N01S830HA_read/152 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) _transmit_spi_header/148 (write) _transmit_spi_header/148 (read) _transmit_spi_header/148 (read) N01S830HA_write_mode_reg/154 (write) N01S830HA_write_mode_reg/154 (read) N01S830HA_write_mode_reg/154 (read) N01S830HA_read_mode_reg/155 (write) N01S830HA_read_mode_reg/155 (read) N01S830HA_read_mode_reg/155 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: semantic_interposition public
+  References: 
+  Referring: N01S830HA_enter_quadmode/150 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_read/152 (read) N01S830HA_read/152 (read) 
+  Availability: not-ready
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition
+  References: 
+  Referring: N01S830HA_init/149 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+N01S830HA_write_mode_reg/171 (N01S830HA_write_mode_reg) @0707e1f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 170
+  References: _g_err/146 (write) 
+  Referring: 
+  Function N01S830HA_write_mode_reg/171 is inline copy in N01S830HA_init/149
+  Clone of N01S830HA_write_mode_reg/154
+  Availability: local
+  Function flags: count:38844567 (estimated locally) body local
+  Called by: N01S830HA_init/149 (inlined) (38844567 (estimated locally),0.04 per call) 
+  Calls: spi_transmit/161 (38844567 (estimated locally),0.04 per call) MXC_Delay/164 (18987224 (estimated locally),0.02 per call) 
+N01S830HA_write_mode_reg/170 (N01S830HA_write_mode_reg) @07076f18
+  Type: function definition analyzed
+  Visibility: semantic_interposition public
+  next sharing asm name: 154
+  previous sharing asm name: 171
+  References: _g_err/146 (write) 
+  Referring: 
+  Function N01S830HA_write_mode_reg/170 is inline copy in N01S830HA_init/149
+  Clone of N01S830HA_write_mode_reg/154
+  Availability: local
+  Function flags: count:125398821 (estimated locally) body local
+  Called by: N01S830HA_init/149 (inlined) (125398821 (estimated locally),0.12 per call) 
+  Calls: spi_transmit/161 (125398821 (estimated locally),0.12 per call) MXC_Delay/164 (61294943 (estimated locally),0.06 per call) 
+_transmit_spi_header.isra.0/169 (_transmit_spi_header.isra) @07076888
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 168
+  References: _g_err/146 (write) 
+  Referring: 
+  Function _transmit_spi_header.isra/169 is inline copy in N01S830HA_write/153
+  Clone of _transmit_spi_header.isra.0/168
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local
+  Called by: N01S830HA_write/153 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: spi_transmit/161 (1073741824 (estimated locally),1.00 per call) 
+_transmit_spi_header.isra.0/168 (_transmit_spi_header.isra) @07076c78
+  Type: function definition analyzed
+  Visibility:
+  previous sharing asm name: 169
+  References: _g_err/146 (write) 
+  Referring: 
+  Function _transmit_spi_header.isra/168 is inline copy in N01S830HA_read/152
+  Clone of _transmit_spi_header/148
+  Availability: local
+  Function flags: count:354334800 (estimated locally) local
+  Called by: N01S830HA_read/152 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: spi_transmit/161 (354334800 (estimated locally),0.33 per call) 
+N01S830HA_read_mode_reg.part.0/167 (N01S830HA_read_mode_reg.part.0) @070761f8
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Function N01S830HA_read_mode_reg.part.0/167 is inline copy in N01S830HA_read_mode_reg/155
+  Availability: local
+  Function flags: count:524845000 (estimated locally) body local split_part
+  Called by: N01S830HA_read_mode_reg/155 (inlined) (524845000 (estimated locally),0.49 per call) 
+  Calls: spi_transmit/161 (524845000 (estimated locally),0.49 per call) 
+N01S830HA_exit_quadmode.part.0/166 (N01S830HA_exit_quadmode.part.0) @070760a8
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: _g_err/146 (write) g_current_mode/145 (write) 
+  Referring: 
+  Function N01S830HA_exit_quadmode.part.0/166 is inline copy in N01S830HA_exit_quadmode/151
+  Availability: local
+  Function flags: count:256544234 (estimated locally) body local split_part
+  Called by: N01S830HA_exit_quadmode/151 (inlined) (256544234 (estimated locally),0.24 per call) 
+  Calls: spi_exit_quadmode/160 (256544234 (estimated locally),0.24 per call) 
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/171 (18987224 (estimated locally),0.02 per call) N01S830HA_write_mode_reg/170 (61294943 (estimated locally),0.06 per call) N01S830HA_write_mode_reg/154 (524845000 (estimated locally),0.49 per call) 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_read/152 (145607981 (estimated locally),0.14 per call) 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_exit_quadmode/151 (1073741823 (estimated locally),1.00 per call) N01S830HA_enter_quadmode/150 (256544234 (estimated locally),0.24 per call) 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_write_mode_reg/171 (38844567 (estimated locally),0.04 per call) N01S830HA_write_mode_reg/170 (125398821 (estimated locally),0.12 per call) _transmit_spi_header.isra.0/169 (1073741824 (estimated locally),1.00 per call) _transmit_spi_header.isra.0/168 (354334800 (estimated locally),0.33 per call) N01S830HA_read_mode_reg/155 (1073741824 (estimated locally),1.00 per call) N01S830HA_read_mode_reg.part.0/167 (524845000 (estimated locally),0.49 per call) N01S830HA_write_mode_reg/154 (1073741824 (estimated locally),1.00 per call) N01S830HA_write/153 (1073741824 (estimated locally),1.00 per call) N01S830HA_read/152 (1024235111 (estimated locally),0.95 per call) N01S830HA_read/152 (145607981 (estimated locally),0.14 per call) N01S830HA_exit_quadmode/151 (524844999 (estimated locally),0.49 per call) N01S830HA_enter_quadmode/150 (524844999 (estimated locally),0.49 per call) 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_exit_quadmode.part.0/166 (256544234 (estimated locally),0.24 per call) N01S830HA_enter_quadmode/150 (1073741823 (estimated locally),1.00 per call) 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_init/149 (250631 (estimated locally),0.00 per call) 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_init/149 (125398821 (estimated locally),0.12 per call) 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_init/149 (256544234 (estimated locally),0.24 per call) 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: N01S830HA_init/149 (12280936 (estimated locally),0.01 per call) N01S830HA_init/149 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: _g_err/146 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: N01S830HA_init/149 (18987224 (estimated locally),0.02 per call) N01S830HA_init/149 (61294943 (estimated locally),0.06 per call) 
+  Calls: N01S830HA_read_mode_reg.part.0/167 (inlined) (524845000 (estimated locally),0.49 per call) spi_transmit/161 (1073741824 (estimated locally),1.00 per call) 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  previous sharing asm name: 170
+  References: _g_err/146 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_Delay/164 (524845000 (estimated locally),0.49 per call) spi_transmit/161 (1073741824 (estimated locally),1.00 per call) 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: spi_transmit/161 (1073741824 (estimated locally),1.00 per call) _transmit_spi_header.isra.0/169 (inlined) (1073741824 (estimated locally),1.00 per call) 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: g_current_mode/145 (read) _g_err/146 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: spi_transmit/161 (1024235111 (estimated locally),0.95 per call) spi_transmit/161 (145607981 (estimated locally),0.14 per call) memset/163 (145607981 (estimated locally),0.14 per call) _transmit_spi_header.isra.0/168 (inlined) (354334800 (estimated locally),0.33 per call) 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: N01S830HA_init/149 (524845000 (estimated locally),0.49 per call) 
+  Calls: N01S830HA_exit_quadmode.part.0/166 (inlined) (256544234 (estimated locally),0.24 per call) spi_transmit/161 (524844999 (estimated locally),0.49 per call) spi_enter_quadmode/162 (1073741823 (estimated locally),1.00 per call) 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (write) _g_err/146 (write) g_current_mode/145 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: 
+  Calls: spi_enter_quadmode/162 (256544234 (estimated locally),0.24 per call) spi_transmit/161 (524844999 (estimated locally),0.49 per call) spi_exit_quadmode/160 (1073741823 (estimated locally),1.00 per call) 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: _g_err/146 (write) _g_err/146 (write) N01S830HA_hold_pin/144 (addr) _g_err/146 (write) _g_err/146 (write) _g_err/146 (write) _g_err/146 (write) _g_err/146 (write) _g_err/146 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: spi_init/156 (12280936 (estimated locally),0.01 per call) printf/159 (250631 (estimated locally),0.00 per call) N01S830HA_read_mode_reg/155 (18987224 (estimated locally),0.02 per call) N01S830HA_write_mode_reg/171 (inlined) (38844567 (estimated locally),0.04 per call) N01S830HA_read_mode_reg/155 (61294943 (estimated locally),0.06 per call) N01S830HA_write_mode_reg/170 (inlined) (125398821 (estimated locally),0.12 per call) MXC_GPIO_OutSet/158 (125398821 (estimated locally),0.12 per call) MXC_GPIO_Config/157 (256544234 (estimated locally),0.24 per call) N01S830HA_exit_quadmode/151 (524845000 (estimated locally),0.49 per call) spi_init/156 (1073741824 (estimated locally),1.00 per call) 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: _transmit_spi_header.isra.0/168 (write) N01S830HA_enter_quadmode/150 (write) N01S830HA_read_mode_reg/155 (write) N01S830HA_write_mode_reg/154 (write) N01S830HA_enter_quadmode/150 (write) N01S830HA_enter_quadmode/150 (write) N01S830HA_read/152 (write) N01S830HA_exit_quadmode.part.0/166 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_exit_quadmode/151 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) N01S830HA_init/149 (write) _transmit_spi_header.isra.0/169 (write) N01S830HA_write_mode_reg/170 (write) N01S830HA_write_mode_reg/171 (write) 
+  Availability: available
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition public
+  References: 
+  Referring: N01S830HA_enter_quadmode/150 (write) N01S830HA_exit_quadmode.part.0/166 (write) N01S830HA_read/152 (read) 
+  Availability: available
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: N01S830HA_init/149 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+cloning _transmit_spi_header/148 to _transmit_spi_header.isra/168
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+                             1. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+    Will SKIP return.
+int _transmit_spi_header (uint8_t cmd, uint32_t address)
+{
+  uint8_t header[4];
+  int _1;
+  long unsigned int _8;
+  unsigned char _9;
+  long unsigned int _10;
+  unsigned char _11;
+  unsigned char _12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG cmd => cmd_3(D)
+  # DEBUG address => address_4(D)
+  # DEBUG out => &header
+  # DEBUG INLINE_ENTRY _parse_spi_header
+  # DEBUG BEGIN_STMT
+  MEM[(uint8_t *)&header] = cmd_3(D);
+  # DEBUG BEGIN_STMT
+  _8 = address_4(D) >> 16;
+  _9 = (unsigned char) _8;
+  MEM[(uint8_t *)&header + 1B] = _9;
+  # DEBUG BEGIN_STMT
+  _10 = address_4(D) >> 8;
+  _11 = (unsigned char) _10;
+  MEM[(uint8_t *)&header + 2B] = _11;
+  # DEBUG BEGIN_STMT
+  _12 = (unsigned char) address_4(D);
+  MEM[(uint8_t *)&header + 3B] = _12;
+  # DEBUG cmd => NULL
+  # DEBUG address => NULL
+  # DEBUG out => NULL
+  # DEBUG BEGIN_STMT
+  _1 = spi_transmit (&header, 4, 0B, 0, 0);
+  _g_err = _1;
+  header ={v} {CLOBBER(eol)};
+  return _1;
+
+}
+
+
+void _transmit_spi_header.isra (uint8_t cmd, uint32_t address)
+{
+  int D.8736;
+  uint8_t header[4];
+  long unsigned int _3;
+  unsigned char _4;
+  long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  int _8;
+
+  <bb 3> [local count: 1073741824]:
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG cmd => cmd_1(D)
+  # DEBUG address => address_2(D)
+  # DEBUG out => &header
+  # DEBUG INLINE_ENTRY _parse_spi_header
+  # DEBUG BEGIN_STMT
+  MEM[(uint8_t *)&header] = cmd_1(D);
+  # DEBUG BEGIN_STMT
+  _3 = address_2(D) >> 16;
+  _4 = (unsigned char) _3;
+  MEM[(uint8_t *)&header + 1B] = _4;
+  # DEBUG BEGIN_STMT
+  _5 = address_2(D) >> 8;
+  _6 = (unsigned char) _5;
+  MEM[(uint8_t *)&header + 2B] = _6;
+  # DEBUG BEGIN_STMT
+  _7 = (unsigned char) address_2(D);
+  MEM[(uint8_t *)&header + 3B] = _7;
+  # DEBUG cmd => NULL
+  # DEBUG address => NULL
+  # DEBUG out => NULL
+  # DEBUG BEGIN_STMT
+  _8 = spi_transmit (&header, 4, 0B, 0, 0);
+  _g_err = _8;
+  header ={v} {CLOBBER(eol)};
+  return;
+
+}
+
+
+updating call of N01S830HA_read/152 -> _transmit_spi_header.isra/168: _transmit_spi_header (3, address_8(D));
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+                             1. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+    Will SKIP return.
+  updated to:_transmit_spi_header.isra (3, address_8(D));
+updating call of N01S830HA_write/153 -> _transmit_spi_header.isra/168: _transmit_spi_header (2, address_2(D));
+    m_always_copy_start: 2
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 0, prev_clone_index: 0
+                             1. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+    Will SKIP return.
+  updated to:_transmit_spi_header.isra (2, address_2(D));
+updating call of N01S830HA_init/149 -> N01S830HA_write_mode_reg/170: _4 = N01S830HA_write_mode_reg (1);
+  updated to:_4 = N01S830HA_write_mode_reg (1);
+Trivially needed variables: _g_err/146 g_current_mode/145 N01S830HA_hold_pin/144
+Removing variables:
+
+Final Symbol table:
+
+MXC_Delay/164 (MXC_Delay) @071d83f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+memset/163 (memset) @071d8348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+spi_enter_quadmode/162 (spi_enter_quadmode) @071d82a0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+spi_transmit/161 (spi_transmit) @071d81f8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+spi_exit_quadmode/160 (spi_exit_quadmode) @071d8150
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+printf/159 (printf) @071d80a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_OutSet/158 (MXC_GPIO_OutSet) @071d8000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Config/157 (MXC_GPIO_Config) @071c33f0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+spi_init/156 (spi_init) @071c3348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+N01S830HA_read_mode_reg/155 (N01S830HA_read_mode_reg) @071c30a8
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_read_mode_reg (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_write_mode_reg/154 (N01S830HA_write_mode_reg) @071c3e70
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_write_mode_reg (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_write/153 (N01S830HA_write) @071c3d20
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_write (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_read/152 (N01S830HA_read) @071c3bd0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_read (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_exit_quadmode/151 (N01S830HA_exit_quadmode) @071c3a80
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_exit_quadmode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_enter_quadmode/150 (N01S830HA_enter_quadmode) @071c3930
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_enter_quadmode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+N01S830HA_init/149 (N01S830HA_init) @071c37e0
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.text.N01S830HA_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+_transmit_spi_header/148 (_transmit_spi_header) @071c3690
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+_g_err/146 (_g_err) @071be6c0
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.bss._g_err (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+g_current_mode/145 (g_current_mode) @071be678
+  Type: variable definition analyzed
+  Visibility: externally_visible semantic_interposition asm_written public section:.bss.g_current_mode (implicit_section)
+  Aux: @071be6c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+N01S830HA_hold_pin/144 (N01S830HA_hold_pin) @0717dc60
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly asm_written section:.rodata.N01S830HA_hold_pin (implicit_section)
+  Aux: @071be678
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known

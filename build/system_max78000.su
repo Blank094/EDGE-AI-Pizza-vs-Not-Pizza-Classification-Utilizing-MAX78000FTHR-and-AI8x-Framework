@@ -1,0 +1,7 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:39:12:_getpid	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:44:12:_kill	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:49:13:SystemCoreClockUpdate	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:94:12:PreInit	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:106:13:PinInit	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:112:12:Board_Init	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Source/system_max78000.c:124:13:SystemInit	8	static

@@ -1,0 +1,9 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:100:16:send_byte	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:137:16:get_byte	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:165:5:sccb_init	8	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:177:5:sccb_vssel	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:204:5:sccb_scan	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:224:5:sccb_read_byt	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:257:5:sccb_write_byt	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:285:5:sccb_read_reg16	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/Camera/sccb.c:322:5:sccb_write_reg16	32	static

@@ -1,0 +1,7 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:86:5:_open	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:90:5:_close	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:94:5:_isatty	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:98:5:_lseek	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:102:5:_fstat	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:114:5:_read	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/stdio.c:153:5:_write	24	static

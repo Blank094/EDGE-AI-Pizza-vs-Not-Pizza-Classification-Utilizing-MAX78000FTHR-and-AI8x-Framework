@@ -1,0 +1,12 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:172:12:reg_read	4	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:127:12:reg_write	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:144:12:reg_write_buf.constprop	4	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:196:5:max20303_led	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:214:5:max20303_led_red	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:223:5:max20303_led_green	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:232:5:max20303_led_blue	0	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:244:5:max20303_mic_power	16	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:280:5:max20303_camera_power	16	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:318:5:max20303_sd_power	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:413:5:max20303_gpio	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c:519:5:max20303_init	24	static

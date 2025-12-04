@@ -1,0 +1,14 @@
+cnn.c:61:6:CNN_ISR	8	static
+cnn.c:77:5:cnn_continue	0	static
+cnn.c:86:5:cnn_stop	0	static
+cnn.c:93:6:memcpy32	0	static
+cnn.c:102:5:cnn_load_weights	12	static
+cnn.c:127:5:cnn_load_bias	0	static
+cnn.c:134:5:cnn_init	16	static
+cnn.c:153:5:cnn_configure	36	static
+cnn.c:563:5:cnn_start	24	static
+cnn.c:582:5:cnn_unload	0	static
+cnn.c:594:5:cnn_enable	8	static
+cnn.c:612:5:cnn_boost_enable	24	static
+cnn.c:625:5:cnn_boost_disable	24	static
+cnn.c:638:5:cnn_disable	8	static

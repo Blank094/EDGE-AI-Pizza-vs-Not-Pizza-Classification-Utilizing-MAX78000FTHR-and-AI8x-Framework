@@ -1,0 +1,33 @@
+C:/MaximSDK/Examples/MAX78000/CNN/pizza-notpizza/pizza-notpizza-demo-64x64/pizza-notpizza/build/max20303.o: \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.c \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\lib\gcc\arm-none-eabi\12.3.1\include\stdint.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\stdint.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\machine\_default_types.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\sys\features.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\arm-none-eabi\include\sys\_stdint.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\lib\gcc\arm-none-eabi\12.3.1\include\stddef.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/core_cm4.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_version.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_compiler.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/cmsis_gcc.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/5.9.0/Core/Include/mpu_armv7.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/system_max78000.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/gcr_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_errors.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_pins.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/gpio.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/gpio_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_delay.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/i2c.h \
+ c:\analog\cfs\1.0.0\tools\gcc\arm-none-eabi\lib\gcc\arm-none-eabi\12.3.1\include\stdbool.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_sys.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/lpgcr_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/gcr_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/i2c_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/CMSIS/Device/Maxim/MAX78000/Include/dma_regs.h \
+ C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/PMIC/max20303.h

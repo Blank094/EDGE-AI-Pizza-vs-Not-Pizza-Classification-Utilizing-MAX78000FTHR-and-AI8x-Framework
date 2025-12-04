@@ -1,0 +1,7 @@
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:117:5:N01S830HA_enter_quadmode	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:130:5:N01S830HA_exit_quadmode	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:143:5:N01S830HA_read	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:172:5:N01S830HA_write	32	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:178:5:N01S830HA_write_mode_reg	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:187:5:N01S830HA_read_mode_reg	24	static
+C:/analog/cfs/1.0.0/SDK/MAX/Libraries/MiscDrivers/SRAM/N01S830HA.c:65:5:N01S830HA_init	32	static
